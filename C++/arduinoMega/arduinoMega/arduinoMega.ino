@@ -9,11 +9,11 @@ DeviceAddress address2 = {0x28, 0xE3, 0x41, 0x79, 0x97, 0x9, 0x3, 0x73,}; // Dir
 DeviceAddress address3 = {0x28, 0xFF, 0xF5, 0x57, 0xC2, 0x16, 0x4, 0x59}; // Direction sensor 3 (Center)
 
 /***** Define Actuators Pins *****/
-const byte pump = 13;
-const byte pump1 = 14; // Replicate pump
-const byte waveMaker = 15;
-const byte heatResistor = 16;
-const byte led = 17;
+const byte pump = 22;
+const byte pump1 = 24; // Replicate pump
+const byte heatResistor = 26;
+const byte waveMaker = 28;
+const byte led = 30;
 
 /***** Control Day/Night Variables *****/
 byte dateHour;
@@ -58,7 +58,6 @@ void setup() {
 }
 
 void loop() {
-  time_update(); // Update hour and minute
   pumpRun(); // Turn on/off pumps
   
 }

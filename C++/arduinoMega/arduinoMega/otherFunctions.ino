@@ -1,11 +1,3 @@
-/***** Request for hour and minute *****/
-void time_update(){
-  if(millis()-timeUpdate>60000){
-    Serial.println(F("Update"));
-    timeUpdate = millis();
-  }
-}
-
 /***** isItDay *****/
 // Control pumps
 // Control LED´s
@@ -66,9 +58,9 @@ void pumpRun(){
 /***** Get Temperature Data *****/
 void getTemp_controlHR(){
   tempSensors.requestTemperatures();
-  float temp1= sensors.getTempC(address1); // Get temperature from south sensor
-  float temp2= sensors.getTempC(address2); // Get temperature from north sensor
-  float temp3= sensors.getTempC(address3); // Get temperature from center sensor
+  float temp1= tempSensors.getTempC(address1); // Get temperature from south sensor
+  float temp2= tempSensors.getTempC(address2); // Get temperature from north sensor
+  float temp3= tempSensors.getTempC(address3); // Get temperature from center sensor
   
   Serial.print(F("North Sensor Temperature = ")); Serial.print(temp2); Serial.println(F(" °C"));
   Serial.print(F("South Sensor Temperature = ")); Serial.print(temp1); Serial.println(F(" °C"));

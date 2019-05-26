@@ -13,8 +13,8 @@ void serialEvent(){
 
   if(inputString_complete){
     if(inputString.charAt(0)==zero_char){ // get hour/minute Function --> '0'
-       String newHour = inputstring.substring(2,4); // Form = 10Int(2)Int(2)
-       String newMinute = inputstring.substring(4,6);
+       String newHour = inputString.substring(1,3); // Form = 10Int(2)Int(2)
+       String newMinute = inputString.substring(3,5);
        
        getTemp_controlHR(); // measure Temp and control heatResitor
        

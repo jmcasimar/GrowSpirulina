@@ -7,14 +7,14 @@ arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
 arduino.close()
 
 day = 0
-hour = (datetime.now).hour
-minute = (datetime.now).minute
+hour = (datetime.now()).hour
+minute = (datetime.now()).minute
 
 print("Setting Devices...")
 arduino.open()
 print("Devices ready")
-print("")
-
+print("\n***** Welcome to Grow Spirulina *****\n\nWith this window you will be able to control your production,"+
+      " of Spirulina, but you must be capable to operate this system or you can cause severe damage.\n")
 start = input("Do you want to continue? y/n \n")
 if(start == "s" or start =="S" or start == "y" or start == "Y"):
     x=0
@@ -34,8 +34,8 @@ while x==0:
             str_minute = "0"+str(minute)
         else:
             str_minute = str(minute)
-
-        arduino.write(bytes("0"+str_hour+str_minute+"\r\n", 'utf-8'))
+        str_date = "0"+str_hour+str_minute+"\r\n"
+        arduino.write(bytes(str_date, 'utf-8'))
 
     while arduino.inWaiting()>0:
         line = arduino.readline()
