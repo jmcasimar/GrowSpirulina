@@ -57,10 +57,15 @@ void pumpRun(){
 
 /***** Get Temperature Data *****/
 void getTemp_controlHR(){
-  tempSensors.requestTemperatures();
-  float temp1= tempSensors.getTempC(address1); // Get temperature from south sensor
-  float temp2= tempSensors.getTempC(address2); // Get temperature from north sensor
-  float temp3= tempSensors.getTempC(address3); // Get temperature from center sensor
+  float temp1=0, temp2=0, temp3=0;
+  while(temp1<=0 || temp2<=0 || temp3<=0){
+    tempSensors.requestTemperatures();
+    temp1= tempSensors.getTempC(address1); // Get temperature from south sensor
+    temp2= tempSensors.getTempC(address2); // Get temperature from north sensor
+    temp3= tempSensors.getTempC(address3); // Get temperature from center sensor
+    delay(5);
+  }
+  
   
   Serial.print(F("North Sensor Temperature = ")); Serial.print(temp2); Serial.println(F(" °C"));
   Serial.print(F("South Sensor Temperature = ")); Serial.print(temp1); Serial.println(F(" °C"));
@@ -91,4 +96,13 @@ void control_wM(byte hr, byte mn){
     digitalWrite(waveMaker, !wM_State);
     Serial.println(F("waveMaker turned off"));
   }
+}
+
+void waterLevel_control(){
+  /*
+  if(digitalRead(waterLevel)==HIGH){
+    Serial.println("Water Level too high");
+    delay(60000);
+  }
+  */
 }

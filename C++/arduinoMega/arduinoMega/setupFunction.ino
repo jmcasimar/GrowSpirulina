@@ -4,6 +4,7 @@ void setupActuators(){
   pinMode(waveMaker, OUTPUT);
   pinMode(heatResistor, OUTPUT);
   pinMode(led, OUTPUT);
+  pinMode(waterLevel, INPUT_PULLUP);
   
   digitalWrite(pump, !LOW);
   digitalWrite(pump1, !LOW);

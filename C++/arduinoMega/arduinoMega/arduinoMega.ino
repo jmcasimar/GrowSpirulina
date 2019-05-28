@@ -5,8 +5,11 @@
 OneWire ourWire(2); // Define pin 2 as oneWire bus
 DallasTemperature tempSensors(&ourWire); // Declare tempSensor object with oneWire bus
 DeviceAddress address1 = {0x28, 0x32, 0x58, 0x79, 0x97, 0x10, 0x3, 0x51}; // Direction sensor 1 (South)
-DeviceAddress address2 = {0x28, 0xE3, 0x41, 0x79, 0x97, 0x9, 0x3, 0x73,}; // Direction sensor 2 (North)
+DeviceAddress address2 = {0x28, 0xE3, 0x41, 0x79, 0x97, 0x9, 0x3, 0x73}; // Direction sensor 2 (North)
 DeviceAddress address3 = {0x28, 0xFF, 0xF5, 0x57, 0xC2, 0x16, 0x4, 0x59}; // Direction sensor 3 (Center)
+
+/***** Water level sensor*****/
+const byte waterLevel = 25;
 
 /***** Define Actuators Pins *****/
 const byte pump = 22;
@@ -49,6 +52,7 @@ bool inputString_complete = false;
 
 void setup() {
   Serial.begin(115200);
+  delay(5000);
   Serial.println(F("Setting up device..."));
   tempSensors.begin();   // Init Temp Sensors
   Serial.println(F("Temperature Sensores started correctly"));
@@ -59,5 +63,5 @@ void setup() {
 
 void loop() {
   pumpRun(); // Turn on/off pumps
-  
+  waterLevel_control();
 }

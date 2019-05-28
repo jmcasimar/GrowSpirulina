@@ -1,0 +1,30 @@
+28/5/2019-18:9:21 Arduino sent: Setting up device...
+28/5/2019-18:9:21 Arduino sent: Temperature Sensores started correctly
+28/5/2019-18:9:21 Arduino sent: Actuators started correctly
+28/5/2019-18:9:21 Arduino sent: Device Ready
+28/5/2019-18:9:21 Arduino sent: Pump Turned On
+28/5/2019-18:10:0 Arduino sent: North Sensor Temperature = 43.19 °C
+28/5/2019-18:10:0 Arduino sent: South Sensor Temperature = 44.75 °C
+28/5/2019-18:10:0 Arduino sent: Center Sensor Temperature = 41.75 °C
+28/5/2019-18:10:0 Arduino sent: Recieved Hour Data 18:10 hrs
+28/5/2019-18:10:0 Arduino sent: Starting day
+28/5/2019-18:11:0 Arduino sent: North Sensor Temperature = 43.06 °C
+28/5/2019-18:11:0 Arduino sent: South Sensor Temperature = 44.56 °C
+28/5/2019-18:11:0 Arduino sent: Center Sensor Temperature = 41.63 °C
+28/5/2019-18:11:0 Arduino sent: Recieved Hour Data 18:11 hrs
+28/5/2019-18:12:2 Arduino sent: North Sensor Temperature = 43.06 °C
+28/5/2019-18:12:2 Arduino sent: South Sensor Temperature = 44.56 °C
+28/5/2019-18:12:2 Arduino sent: Center Sensor Temperature = 41.75 °C
+28/5/2019-18:12:2 Arduino sent: Recieved Hour Data 18:12 hrs
+28/5/2019-18:13:0 Arduino sent: North Sensor Temperature = 43.13 °C
+28/5/2019-18:13:0 Arduino sent: South Sensor Temperature = 44.56 °C
+28/5/2019-18:13:0 Arduino sent: Center Sensor Temperature = 41.75 °C
+28/5/2019-18:13:0 Arduino sent: Recieved Hour Data 18:13 hrs
+28/5/2019-18:14:0 Arduino sent: North Sensor Temperature = 43.13 °C
+28/5/2019-18:14:0 Arduino sent: South Sensor Temperature = 44.50 °C
+28/5/2019-18:14:0 Arduino sent: Center Sensor Temperature = 41.75 °C
+28/5/2019-18:14:0 Arduino sent: Recieved Hour Data 18:14 hrs
+28/5/2019-18:15:1 Arduino sent: North Sensor Temperature = 43.19 °C
+28/5/2019-18:15:1 Arduino sent: South Sensor Temperature = 44.31 °C
+28/5/2019-18:15:1 Arduino sent: Center Sensor Temperature = 41.88 °C
+28/5/2019-18:15:1 Arduino sent: Recieved Hour Data 18:15 hrs

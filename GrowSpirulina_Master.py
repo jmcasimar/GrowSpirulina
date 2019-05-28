@@ -1,6 +1,7 @@
 import time
 from datetime import datetime
 import serial
+import os
 
 # Init Arduino object, Serial Port and Baud Rate
 arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
@@ -39,7 +40,14 @@ while x==0:
 
     while arduino.inWaiting()>0:
         line = arduino.readline()
-        print("\nArduino sent: {}".format(str(line,'utf-8')))
+        printLine = "Arduino sent: " + str(line,'utf-8')
+        print(printLine)
+        if(os.path.isfile('log/arduino.log')):
+            f = open('log/arduino.log', "a+")
+        else:
+            f = open('log/arduino.log', "w+")
+        f.write("{0}/{1}/{2}-{3}:{4}:{5} ".format(now.day,now.month,now.year,now.hour,now.minute,now.second) + printLine)
+        f.close()
 
 if(x==1):
     print("Closing devices")
