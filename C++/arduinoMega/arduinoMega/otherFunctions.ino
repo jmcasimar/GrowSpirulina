@@ -99,10 +99,10 @@ void control_wM(byte hr, byte mn){
 }
 
 void waterLevel_control(){
-  /*
-  if(digitalRead(waterLevel)==HIGH){
+  
+  if(digitalRead(waterLevel)==HIGH){ //Le puse LOW para que no de lata
     Serial.println("Water Level too high");
-    delay(60000);
+    delay(1000);
   }
-  */
+  
 }
