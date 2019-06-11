@@ -17,6 +17,13 @@ const byte pump1 = 24; // Replicate pump
 const byte heatResistor = 26;
 const byte waveMaker = 28;
 const byte led = 30;
+const byte solenoidValve = 32;
+const byte waterPump = 34; // Check pin
+
+/***** Control water level variables *****/
+int water_count_low = 0; // Filter variable
+int water_count_high = 0; // Fitler variable
+bool water_state = LOW;
 
 /***** Control Day/Night Variables *****/
 byte dateHour;
@@ -38,8 +45,7 @@ unsigned long pumpTime;
 bool pumpState = LOW;
 
 bool wM_State = LOW;
-byte wM_On = 10; // 10 minutes 
-
+byte wM_On = 5; // 5 minutes 
 
 /***** Temperature Control Variables *****/
 float maxTemp = 35.00; // 35°C
@@ -63,5 +69,5 @@ void setup() {
 
 void loop() {
   pumpRun(); // Turn on/off pumps
-  waterLevel_control();
+  //waterLevel_control(); // Level water control whit solenoid and level sensor
 }

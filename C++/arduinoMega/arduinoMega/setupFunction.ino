@@ -4,6 +4,8 @@ void setupActuators(){
   pinMode(waveMaker, OUTPUT);
   pinMode(heatResistor, OUTPUT);
   pinMode(led, OUTPUT);
+  pinMode(solenoidValve, OUTPUT);
+  pinMode(waterPump, OUTPUT);
   pinMode(waterLevel, INPUT_PULLUP);
   
   digitalWrite(pump, !LOW);
@@ -11,6 +13,8 @@ void setupActuators(){
   digitalWrite(waveMaker, !LOW);
   digitalWrite(heatResistor, !LOW);
   digitalWrite(led, !LOW);
+  digitalWrite(solenoidValve, !LOW);
+  digitalWrite(waterPump, !LOW);
 
   pumpTime = millis();
   timeUpdate = millis();

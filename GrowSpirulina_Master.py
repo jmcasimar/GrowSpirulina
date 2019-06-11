@@ -2,7 +2,14 @@ import time
 from datetime import datetime
 import serial
 import os
+import select
+import sys
 
+# Get an Input Line
+def GetLine(Block=False):
+  if Block or select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], []):
+      return input()
+    
 # Init Arduino object, Serial Port and Baud Rate
 arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
 arduino.close()
@@ -37,7 +44,14 @@ while x==0:
             str_minute = str(minute)
         str_date = "0"+str_hour+str_minute+"\r\n"
         arduino.write(bytes(str_date, 'utf-8'))
-
+    
+    CmD = GetLine()
+    
+    if(CmD=="On" or CmD=="on" or CmD=="ON"):
+        arduino.write(bytes("1\n",'utf-8'))
+    elif(CmD=="Off" or CmD=="off" or CmD=="OFF"):
+        arduino.write(bytes("2\n",'utf-8'))
+        
     while arduino.inWaiting()>0:
         line = arduino.readline()
         printLine = "Arduino sent: " + str(line,'utf-8')
