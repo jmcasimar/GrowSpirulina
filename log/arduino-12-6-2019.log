@@ -1,0 +1,11 @@
+10:35:54 Arduino sent: Setting up device...
+10:35:54 Arduino sent: Temperature Sensores started correctly
+10:35:54 Arduino sent: Actuators started correctly
+10:35:54 Arduino sent: Device Ready
+10:35:54 Arduino sent: Pump Turned On
+10:36:0 Arduino sent: North Sensor Temperature = 25.44 °C
+10:36:0 Arduino sent: South Sensor Temperature = 26.37 °C
+10:36:0 Arduino sent: Center Sensor Temperature = 25.31 °C
+10:36:0 Arduino sent: Temperature getting down. Turning on heaters
+10:36:0 Arduino sent: Recieved Hour Data 10:36 hrs
+10:36:0 Arduino sent: Starting day
