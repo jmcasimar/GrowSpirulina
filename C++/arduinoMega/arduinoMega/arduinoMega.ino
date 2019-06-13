@@ -18,7 +18,7 @@ const byte heatResistor = 26;
 const byte waveMaker = 28;
 const byte led = 30;
 const byte solenoidValve = 32;
-const byte waterPump = 34; // Check pin
+const byte waterPump = 34;
 
 /***** Control water level variables *****/
 int water_count_low = 0; // Filter variable

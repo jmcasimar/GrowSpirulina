@@ -23,8 +23,8 @@ void is_it_day(byte hr, byte mn){
   else if( hr >= 3 && hr < 5){
     if(isItDay == LOW){
       isItDay = HIGH;
-      pumpOn = pumpOnNight;
-      pumpOff = pumpOffNight;
+      pumpOn = pumpOnDay;
+      pumpOff = pumpOffDay;
       Serial.println(F("Starting day"));
       digitalWrite(led, !isItDay);
       Serial.println(F("Turning on LED´s"));
@@ -107,7 +107,7 @@ void getTemp_controlHR(byte attempNum){
 /***** Control waveMaker *****/
 void control_wM(byte hr, byte mn){
   // Turn on 10 minutes at 2, 9, 14, 19
-  if( ((hr == 9 && mn <= wM_On) || (hr == 14 && mn <= wM_On) || (hr == 19 && mn <= wM_On) || (hr == 2 && mn <= wM_On) ) ){
+  if( ((hr == 9 && mn < wM_On) || (hr == 14 && mn < wM_On) || (hr == 19 && mn < wM_On) || (hr == 2 && mn < wM_On) ) ){
     if(wM_State == LOW){
       wM_State = HIGH;  
       digitalWrite(waveMaker, !wM_State);  
