@@ -15,17 +15,23 @@ void serialEvent(){
     if(inputString.charAt(0)==zero_char){ // get hour/minute Function --> '0'
        String newHour = inputString.substring(1,3); // Form = 10Int(2)Int(2)
        String newMinute = inputString.substring(3,5);
+       int nHour = newHour.toInt();
+       int nMinute = newMinute.toInt();
        
-       getTemp_controlHR(10); // measure Temp and control heatResitor
-       
-       if(newHour.toInt()>=0 && newHour.toInt()<24 && newMinute.toInt()>=0 && newMinute.toInt()<60){
-         dateHour = newHour.toInt();
-         dateMinute = newMinute.toInt();
+       if(nHour>=0 && nHour<24 && nMinute>=0 && nMinute<60){
+         if(dateHour!=nHour){
+           dateHour = nHour;
+           if(pumpEnable==LOW){
+             pumpEnable = HIGH;
+           }
+         }
+         dateMinute = nMinute;
          Serial.print(F("Recieved Hour Data ")); Serial.print(newHour); Serial.print(F(":")); Serial.print(newMinute); Serial.println(F(" hrs")); 
          is_it_day(dateHour, dateMinute);
          control_wM(dateHour, dateMinute);
        }
        else{Serial.println(F("Time Format Incorrect."));}
+       getTemp_controlHR(15); // measure Temp and control heatResitor
     }
     
     else if(inputString.charAt(0)==zero_char+1){ // turnOn solenoid --> '1'

@@ -35,20 +35,28 @@ unsigned long timeUpdate;
 
 /***** Control Actuators Cycles Variables *****/
 // This values are the default parameters on serial monitor you can change it
-unsigned long pumpOnDay = 46800000; // 13 hours
-unsigned long pumpOffDay = 1; // 1 ms
+unsigned long pumpOnDay = 1800000; // 30 minutes
+unsigned long pumpOffDay = 2400000; // 40 minutes
 unsigned long pumpOnNight = 300000; // 5 minutes
 unsigned long pumpOffNight = 3600000; // 60 minutes
 unsigned long pumpOn = pumpOnDay; // By default day
 unsigned long pumpOff = pumpOffDay; // By default day
 unsigned long pumpTime;
 bool pumpState = LOW;
+bool pumpEnable = LOW;
 
 bool wM_State = LOW;
 byte wM_On = 5; // 5 minutes 
 
 /***** Temperature Control Variables *****/
-float maxTemp = 35.00; // 35°C
+float maxTemp_day = 34.00; // 34°C
+float minTemp_day = 30.00; // 30°C
+float maxTemp_night = 30.00; // 30°C
+float minTemp_night = 27.00; // 27°C
+float maxTemp = maxTemp_day; // Temp day by default
+float minTemp = minTemp_day; // Temp day by default
+int temp_counter = 0; // Temp filter
+
 bool hR_State = LOW;
 
 /***** Serial Communication Variables *****/
