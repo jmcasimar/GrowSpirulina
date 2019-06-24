@@ -49,10 +49,10 @@ bool wM_State = LOW;
 byte wM_On = 5; // 5 minutes 
 
 /***** Temperature Control Variables *****/
-float maxTemp_day = 34.00; // 34°C
-float minTemp_day = 30.00; // 30°C
+float maxTemp_day = 33.5; // 33.5°C
+float minTemp_day = 33.00; // 30°C
 float maxTemp_night = 30.00; // 30°C
-float minTemp_night = 27.00; // 27°C
+float minTemp_night = 28.00; // 28°C
 float maxTemp = maxTemp_day; // Temp day by default
 float minTemp = minTemp_day; // Temp day by default
 int temp_counter = 0; // Temp filter

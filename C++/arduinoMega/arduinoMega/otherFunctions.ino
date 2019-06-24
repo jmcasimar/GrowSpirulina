@@ -29,7 +29,7 @@ void is_it_day(byte hr, byte mn){
       isItDay = HIGH;
       pumpOn = pumpOnDay;
       pumpOff = pumpOffDay;
-      maxTemp = maxTemp_day;
+      maxTemp = maxTemp_day; 
       minTemp = minTemp_day;
       Serial.println(F("Starting day"));
       digitalWrite(led, !isItDay);
