@@ -55,6 +55,17 @@ void serialEvent(){
       digitalWrite(solenoidValve, !LOW);
       digitalWrite(waterPump, !LOW);
     }
+
+    else if(inputString.charAt(0)==zero_char+3){ // disabled heatResistor --> '3'
+      hResistor.turnOff();
+      hResistor.enable(LOW);
+      Serial.println(F("Disabled Heat Resistor"));
+    }
+
+    else if(inputString.charAt(0)==zero_char+4){ // enabled heatResistor --> '4'
+      hResistor.enable(HIGH);
+      Serial.println(F("Enabled Heat Resistor"));
+    }
   }
   
   inputString_complete = false;

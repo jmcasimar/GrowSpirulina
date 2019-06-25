@@ -9,7 +9,7 @@ import sys
 def GetLine(Block=False):
   if Block or select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], []):
       return input()
-    
+
 # Init Arduino object, Serial Port and Baud Rate
 arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
 arduino.close()
@@ -39,11 +39,11 @@ else: x = 0
 
 while x==0:
     now = datetime.now()
-    
+
     if(day!=now.day):
         day = now.day
         filelog = 'log/arduino-{0}-{1}-{2}.log'.format(now.day,now.month,now.year)
-        
+
     if(minute!=now.minute):
         hour = now.hour
         minute = now.minute
@@ -57,13 +57,17 @@ while x==0:
             str_minute = str(minute)
         str_date = "0"+str_hour+str_minute+"\r\n"
         arduino.write(bytes(str_date, 'utf-8'))
-    
+
     CmD = GetLine()
-    
+
     if(CmD=="On" or CmD=="on" or CmD=="ON"):
         arduino.write(bytes("1\n",'utf-8'))
     elif(CmD=="Off" or CmD=="off" or CmD=="OFF"):
         arduino.write(bytes("2\n",'utf-8'))
+    elif(CmD=="heatOff" or CmD=="heatoff"):
+        arduino.write(bytes("3\n",'utf-8'))
+    elif(CmD=="heatOn" or CmD=="heaton"):
+        arduino.write(bytes("4\n",'utf-8'))
         
     while arduino.inWaiting()>0:
         line = arduino.readline()

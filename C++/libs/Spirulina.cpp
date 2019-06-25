@@ -187,6 +187,7 @@ heatResistor::heatResistor(byte pin) // Constructor
     __tempMinDay = 0;
     __tempMaxNight = 0;
     __tempMinNight = 0;
+    __Enable = HIGH;
     __ActualTime = millis();
   }
 
@@ -222,6 +223,12 @@ bool heatResistor::getState()
 void heatResistor::resetTime()
   { __ActualTime = millis(); }
 
+void heatResistor::enable(bool en)
+  { __Enable = en; }
+
+bool heatResistor::isEnabled()
+  { return __Enable; }
+
 void heatResistor::control(float tempMin, float tempMax, float t1, float t2, float t3)
   { float meanTemp = (t1+t2+t3)/3;
     if( (t1>=tempMax || t2>=tempMax || t3>=tempMax) && getState()==HIGH){
@@ -242,13 +249,15 @@ void heatResistor::control(float tempMin, float tempMax, float t1, float t2, flo
   }
 
 void heatResistor::run(bool day, float t1, float t2, float t3)
-  { if(millis()-__ActualTime>2000){
-      resetTime();
-      if( day ){
-        control(__tempMinDay, __tempMaxDay, t1, t2, t3);
-      }
-      else{
-        control(__tempMinNight, __tempMaxNight, t1, t2, t3);
+  { if(__Enable){
+      if(millis()-__ActualTime>2000){
+        resetTime();
+        if( day ){
+          control(__tempMinDay, __tempMaxDay, t1, t2, t3);
+        }
+        else{
+          control(__tempMinNight, __tempMaxNight, t1, t2, t3);
+        }
       }
     }
   }

@@ -91,7 +91,7 @@ class airPump
 
 class heatResistor
 { private:
-    bool __State;
+    bool __State, __Enable;
     byte __Pin;
     int __Counter;
     float __tempMaxDay, __tempMinDay, __tempMaxNight, __tempMinNight;
@@ -105,6 +105,8 @@ class heatResistor
       void turnOff();
       bool getState();
       void resetTime();
+      void enable(bool en);
+      bool isEnabled();
       void control(float tempMin, float tempMax, float t1, float t2, float t3);
       void run(bool day, float t1, float t2, float t3);
 
