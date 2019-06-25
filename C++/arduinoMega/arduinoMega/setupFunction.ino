@@ -11,6 +11,6 @@ void setupActuators(){
   wMaker.begin(2, 9, 14, 19); // Parameters: On1, On2, On3, On4 [hours]
   aPump.begin(20, 10, 5, 55); // Parameters: OnDay, OffDay, OnNight, OffNight [minutes]
   aPump1.begin(20, 10, 5, 55); // Parameters: OnDay, OffDay, OnNight, OffNight [minutes]
-  hResistor.begin(33.5, 33.0, 30.0, 28.0); // Parameters: tempMaxDay, tempMinDay, tempMaxNight, tempMinNight;
+  hResistor.begin(33.5, 30.0, 30.0, 28.0); // Parameters: tempMaxDay, tempMinDay, tempMaxNight, tempMinNight;
   tempTime = millis();  
 }

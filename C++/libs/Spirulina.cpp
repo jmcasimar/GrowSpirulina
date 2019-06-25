@@ -93,7 +93,7 @@ bool waveMaker::getState()
   { return __State; }
 
 void waveMaker::run(byte hr, byte mn)
-  { if( ((hr==__On1 && mn>=30 && mn<30+__TimeOn) || (hr==__On2 && mn>=30 && mn<30+__TimeOn) || (hr==__On3 && mn>=30 && mn<30+__TimeOn) || (hr==__On4 && mn>=30 && mn<30+__TimeOn)) ){
+  { if( ((hr==__On1 && mn>=21 && mn<21+__TimeOn) || (hr==__On2 && mn>=21 && mn<21+__TimeOn) || (hr==__On3 && mn>=21 && mn<21+__TimeOn) || (hr==__On4 && mn>=21 && mn<21+__TimeOn)) ){
       turnOn();
     }
     else{

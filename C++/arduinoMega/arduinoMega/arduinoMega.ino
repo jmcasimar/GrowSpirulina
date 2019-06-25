@@ -21,7 +21,7 @@ const byte waterPump = 34;
 SP_LED led(30); // Pin
 
 /*** waveMaker definition ***/
-waveMaker wMaker(28, 5); // Pin, timeOn
+waveMaker wMaker(28, 5); // Pin, timeOn [minutes]
 
 /*** airPump definitions ***/
 airPump aPump(22); // Pin
