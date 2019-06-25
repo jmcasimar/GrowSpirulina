@@ -21,17 +21,27 @@ void serialEvent(){
        if(nHour>=0 && nHour<24 && nMinute>=0 && nMinute<60){
          if(dateHour!=nHour){
            dateHour = nHour;
-           if(pumpEnable==LOW){
-             pumpEnable = HIGH;
-           }
          }
          dateMinute = nMinute;
+         
+         if(dateMinute==0){
+          if(aPump.isEnable()==LOW){
+            aPump.enable(HIGH);  
+          }
+          if(aPump1.isEnable()==LOW){
+            aPump1.enable(HIGH);  
+          }
+         }
+         
          Serial.print(F("Recieved Hour Data ")); Serial.print(newHour); Serial.print(F(":")); Serial.print(newMinute); Serial.println(F(" hrs")); 
          is_it_day(dateHour, dateMinute);
-         control_wM(dateHour, dateMinute);
+         wMaker.run(dateHour, dateMinute);
+         led.run(dateHour);
        }
        else{Serial.println(F("Time Format Incorrect."));}
-       getTemp_controlHR(15); // measure Temp and control heatResitor
+       Serial.print(F("North Sensor Temperature = ")); Serial.print(temp2); Serial.println(F(" °C"));
+       Serial.print(F("South Sensor Temperature = ")); Serial.print(temp1); Serial.println(F(" °C"));
+       Serial.print(F("Center Sensor Temperature = ")); Serial.print(temp3); Serial.println(F(" °C"));
     }
     
     else if(inputString.charAt(0)==zero_char+1){ // turnOn solenoid --> '1'

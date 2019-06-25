@@ -1,21 +1,16 @@
 void setupActuators(){
-  pinMode(pump, OUTPUT);
-  pinMode(pump1, OUTPUT);
-  pinMode(waveMaker, OUTPUT);
-  pinMode(heatResistor, OUTPUT);
-  pinMode(led, OUTPUT);
   pinMode(solenoidValve, OUTPUT);
   pinMode(waterPump, OUTPUT);
   pinMode(waterLevel, INPUT_PULLUP);
   
-  digitalWrite(pump, !LOW);
-  digitalWrite(pump1, !LOW);
-  digitalWrite(waveMaker, !LOW);
-  digitalWrite(heatResistor, !LOW);
-  digitalWrite(led, !LOW);
   digitalWrite(solenoidValve, !LOW);
   digitalWrite(waterPump, !LOW);
 
-  pumpTime = millis();
-  timeUpdate = millis();
+
+  led.begin(5, 7, 21, 23); // Parameters: On1, Off1, On2, Off2 [hours]
+  wMaker.begin(2, 9, 14, 19); // Parameters: On1, On2, On3, On4 [hours]
+  aPump.begin(20, 10, 5, 55); // Parameters: OnDay, OffDay, OnNight, OffNight [minutes]
+  aPump1.begin(20, 10, 5, 55); // Parameters: OnDay, OffDay, OnNight, OffNight [minutes]
+  hResistor.begin(33.5, 33.0, 30.0, 28.0); // Parameters: tempMaxDay, tempMinDay, tempMaxNight, tempMinNight;
+  tempTime = millis();  
 }

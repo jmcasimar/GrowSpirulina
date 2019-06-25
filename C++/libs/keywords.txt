@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map For Grow
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Spirulina	KEYWORD1
+SP_LED	KEYWORD1
+waveMaker	KEYWORD1
+airPump	KEYWORD1
+actuator	KEYWORD1
+heatResistor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+toFloat	KEYWORD2
+
+begin	KEYWORD2
+turnOn	KEYWORD2
+turnOff	KEYWORD2
+getState	KEYWORD2
+run	KEYWORD2
+enable	KEYWORD2
+isEnable	KEYWORD2
+resetTime	KEYWORD2
+control	KEYWORD2

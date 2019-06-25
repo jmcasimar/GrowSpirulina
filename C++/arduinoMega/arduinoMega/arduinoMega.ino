@@ -1,5 +1,6 @@
 #include <OneWire.h>                
 #include <DallasTemperature.h>
+#include <Spirulina.h>
 
 /***** Temperature Sensors (DS18B20)*****/
 OneWire ourWire(2); // Define pin 2 as oneWire bus
@@ -7,18 +8,27 @@ DallasTemperature tempSensors(&ourWire); // Declare tempSensor object with oneWi
 DeviceAddress address1 = {0x28, 0x32, 0x58, 0x79, 0x97, 0x10, 0x3, 0x51}; // Direction sensor 1 (South)
 DeviceAddress address2 = {0x28, 0xE3, 0x41, 0x79, 0x97, 0x9, 0x3, 0x73}; // Direction sensor 2 (North)
 DeviceAddress address3 = {0x28, 0xFF, 0xF5, 0x57, 0xC2, 0x16, 0x4, 0x59}; // Direction sensor 3 (Center)
-
+float temp1 = 0, temp2 = 0, temp3 = 0;
+unsigned long tempTime;
 /***** Water level sensor*****/
 const byte waterLevel = 25;
 
 /***** Define Actuators Pins *****/
-const byte pump = 22;
-const byte pump1 = 24; // Replicate pump
-const byte heatResistor = 26;
-const byte waveMaker = 28;
-const byte led = 30;
 const byte solenoidValve = 32;
 const byte waterPump = 34;
+
+/*** LED definition***/
+SP_LED led(30); // Pin
+
+/*** waveMaker definition ***/
+waveMaker wMaker(28, 5); // Pin, timeOn
+
+/*** airPump definitions ***/
+airPump aPump(22); // Pin
+airPump aPump1(24); // Pin
+
+/*** heatResistor definitions ***/
+heatResistor hResistor(26); // Pin 
 
 /***** Control water level variables *****/
 int water_count_low = 0; // Filter variable
@@ -29,35 +39,8 @@ bool water_state = LOW;
 byte dateHour;
 byte dateMinute;
 bool isItDay = LOW;
-byte dayBegin = 7;
-byte nightBegin = 21;
-unsigned long timeUpdate;
-
-/***** Control Actuators Cycles Variables *****/
-// This values are the default parameters on serial monitor you can change it
-unsigned long pumpOnDay = 1800000; // 30 minutes
-unsigned long pumpOffDay = 2400000; // 40 minutes
-unsigned long pumpOnNight = 300000; // 5 minutes
-unsigned long pumpOffNight = 3600000; // 60 minutes
-unsigned long pumpOn = pumpOnDay; // By default day
-unsigned long pumpOff = pumpOffDay; // By default day
-unsigned long pumpTime;
-bool pumpState = LOW;
-bool pumpEnable = LOW;
-
-bool wM_State = LOW;
-byte wM_On = 5; // 5 minutes 
-
-/***** Temperature Control Variables *****/
-float maxTemp_day = 33.5; // 33.5°C
-float minTemp_day = 33.00; // 30°C
-float maxTemp_night = 30.00; // 30°C
-float minTemp_night = 28.00; // 28°C
-float maxTemp = maxTemp_day; // Temp day by default
-float minTemp = minTemp_day; // Temp day by default
-int temp_counter = 0; // Temp filter
-
-bool hR_State = LOW;
+byte dayBegin = 5;
+byte nightBegin = 23;
 
 /***** Serial Communication Variables *****/
 const byte CMDBUFFER_SIZE = 32;
@@ -66,16 +49,18 @@ bool inputString_complete = false;
 
 void setup() {
   Serial.begin(115200);
-  delay(5000);
+  delay(3000);
   Serial.println(F("Setting up device..."));
   tempSensors.begin();   // Init Temp Sensors
   Serial.println(F("Temperature Sensores started correctly"));
   setupActuators(); // Init Actuators
-  Serial.println(F("Actuators started correctly"));
   Serial.println(F("Device Ready"));
 }
 
 void loop() {
-  pumpRun(); // Turn on/off pumps
+  aPump.run(isItDay); // Turn on/off airPump
+  aPump1.run(isItDay); // Turn on/off airPump1
+  hResistor.run(isItDay, temp1, temp2, temp3); // Turn on/off heatResistor
+  getTemp(10); // 10 Attemps
   //waterLevel_control(); // Level water control whit solenoid and level sensor
 }
