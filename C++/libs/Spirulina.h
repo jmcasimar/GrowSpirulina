@@ -34,8 +34,6 @@ along with Grow.  If not, see <https://www.gnu.org/licenses/>.
 #include <wiring.h>
 #endif
 
-#include <sensor.h>
-
 // Class to control led´s in Kigen bioreactor
 class SP_LED
  {  private:
