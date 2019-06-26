@@ -81,7 +81,7 @@ class airPump
        void begin(unsigned int onDay, unsigned int offDay, unsigned int onNight, unsigned int offNight); // Set cycle parameters
        void turnOn(); // Turn On airPump
        void turnOff(); // Turn Off airPump
-       bool getState(); // Return HIGH if On, else LOW|
+       bool getState(); // Return HIGH if On, else LOW
        void enable(bool en); // Enable or Disable airPump
        bool isEnable(); // Returns true if enable
        void resetTime(); // Reset time counter

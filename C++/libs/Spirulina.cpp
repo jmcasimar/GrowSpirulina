@@ -164,15 +164,15 @@ void airPump::control(unsigned long on, unsigned long off)
   }
 
 void airPump::run(bool day)
-  { if(__Enable){
+  { if(__Enable==HIGH){
       if( day ){
-        unsigned long pumpOn = __pumpOnDay*60*1000;
-        unsigned long pumpOff = pumpOn + __pumpOffDay*60*1000;
+        unsigned long pumpOn = long(__pumpOnDay)*60ul*1000ul;
+        unsigned long pumpOff = long(pumpOn) + long(__pumpOffDay)*60ul*1000ul;
         control(pumpOn, pumpOff);
       }
       else{
-        unsigned long pumpOn = __pumpOnNight*60*1000;
-        unsigned long pumpOff = pumpOn + __pumpOffNight*60*1000;
+        unsigned long pumpOn = long(__pumpOnNight)*60ul*1000ul;
+        unsigned long pumpOff = long(pumpOn) + long(__pumpOffNight)*60ul*1000ul;
         control(pumpOn, pumpOff);
       }
     }
