@@ -4795,3 +4795,961 @@
 20:6:0 Arduino sent: North Sensor Temperature = 34.66 °C
 20:6:0 Arduino sent: South Sensor Temperature = 36.02 °C
 20:6:0 Arduino sent: Center Sensor Temperature = 34.28 °C
+20:7:0 Arduino sent: Recieved Hour Data 20:07 hrs
+20:7:0 Arduino sent: North Sensor Temperature = 34.61 °C
+20:7:0 Arduino sent: South Sensor Temperature = 36.11 °C
+20:7:0 Arduino sent: Center Sensor Temperature = 34.28 °C
+20:8:0 Arduino sent: Recieved Hour Data 20:08 hrs
+20:8:0 Arduino sent: North Sensor Temperature = 34.61 °C
+20:8:0 Arduino sent: South Sensor Temperature = 36.03 °C
+20:8:0 Arduino sent: Center Sensor Temperature = 34.25 °C
+20:9:0 Arduino sent: Recieved Hour Data 20:09 hrs
+20:9:0 Arduino sent: North Sensor Temperature = 34.60 °C
+20:9:0 Arduino sent: South Sensor Temperature = 36.09 °C
+20:9:0 Arduino sent: Center Sensor Temperature = 34.26 °C
+20:10:0 Arduino sent: Recieved Hour Data 20:10 hrs
+20:10:0 Arduino sent: North Sensor Temperature = 34.63 °C
+20:10:0 Arduino sent: South Sensor Temperature = 36.08 °C
+20:10:0 Arduino sent: Center Sensor Temperature = 34.25 °C
+20:11:0 Arduino sent: Recieved Hour Data 20:11 hrs
+20:11:0 Arduino sent: North Sensor Temperature = 34.55 °C
+20:11:0 Arduino sent: South Sensor Temperature = 36.11 °C
+20:11:0 Arduino sent: Center Sensor Temperature = 34.24 °C
+20:12:0 Arduino sent: Recieved Hour Data 20:12 hrs
+20:12:0 Arduino sent: North Sensor Temperature = 34.57 °C
+20:12:0 Arduino sent: South Sensor Temperature = 36.10 °C
+20:12:0 Arduino sent: Center Sensor Temperature = 34.24 °C
+20:13:0 Arduino sent: Recieved Hour Data 20:13 hrs
+20:13:0 Arduino sent: North Sensor Temperature = 34.56 °C
+20:13:0 Arduino sent: South Sensor Temperature = 36.13 °C
+20:13:0 Arduino sent: Center Sensor Temperature = 34.23 °C
+20:14:0 Arduino sent: Recieved Hour Data 20:14 hrs
+20:14:0 Arduino sent: North Sensor Temperature = 34.66 °C
+20:14:0 Arduino sent: South Sensor Temperature = 36.10 °C
+20:14:0 Arduino sent: Center Sensor Temperature = 34.19 °C
+20:15:0 Arduino sent: Recieved Hour Data 20:15 hrs
+20:15:0 Arduino sent: North Sensor Temperature = 34.58 °C
+20:15:0 Arduino sent: South Sensor Temperature = 36.08 °C
+20:15:0 Arduino sent: Center Sensor Temperature = 34.19 °C
+20:16:0 Arduino sent: Recieved Hour Data 20:16 hrs
+20:16:0 Arduino sent: North Sensor Temperature = 34.52 °C
+20:16:0 Arduino sent: South Sensor Temperature = 36.07 °C
+20:16:0 Arduino sent: Center Sensor Temperature = 34.18 °C
+20:17:0 Arduino sent: Recieved Hour Data 20:17 hrs
+20:17:0 Arduino sent: North Sensor Temperature = 34.52 °C
+20:17:0 Arduino sent: South Sensor Temperature = 36.11 °C
+20:17:0 Arduino sent: Center Sensor Temperature = 34.16 °C
+20:18:0 Arduino sent: Recieved Hour Data 20:18 hrs
+20:18:0 Arduino sent: North Sensor Temperature = 34.54 °C
+20:18:0 Arduino sent: South Sensor Temperature = 36.02 °C
+20:18:0 Arduino sent: Center Sensor Temperature = 34.17 °C
+20:19:0 Arduino sent: Recieved Hour Data 20:19 hrs
+20:19:0 Arduino sent: North Sensor Temperature = 34.52 °C
+20:19:0 Arduino sent: South Sensor Temperature = 36.01 °C
+20:19:0 Arduino sent: Center Sensor Temperature = 34.15 °C
+20:19:31 Arduino sent: Setup correctly
+20:19:31 Arduino sent: heatResistor: Setup correctly
+20:19:31 Arduino sent: Device Ready
+20:19:31 Arduino sent: WaveMakers: Setup correctly
+20:19:31 Arduino sent: AirPumps: Setup correctly
+20:19:31 Arduino sent: AirPumps: Setup correctly
+20:19:31 Arduino sent: heatResistor: Setup correctly
+20:19:31 Arduino sent: Device Ready
+20:19:31 Arduino sent: Setting up device...
+20:19:31 Arduino sent: Temperature Sensores started correctly
+20:19:31 Arduino sent: LED: Setup correctly
+20:19:31 Arduino sent: WaveMakers: Setup correctly
+20:19:31 Arduino sent: AirPumps: Setup correctly
+20:19:31 Arduino sent: AirPumps: Setup correctly
+20:19:31 Arduino sent: heatResistor: Setup correctly
+20:19:31 Arduino sent: Device Ready
+20:20:0 Arduino sent: Recieved Hour Data 20:20 hrs
+20:20:0 Arduino sent: Starting day
+20:20:0 Arduino sent: North Sensor Temperature = 34.47 °C
+20:20:0 Arduino sent: South Sensor Temperature = 35.96 °C
+20:20:0 Arduino sent: Center Sensor Temperature = 34.07 °C
+20:20:5 Arduino sent: Disabled Heat Resistor
+20:20:11 Arduino sent: Enabled Heat Resistor
+20:20:31 Arduino sent: Disabled Heat Resistor
+20:20:37 Arduino sent: Enabled Heat Resistor
+20:21:0 Arduino sent: Recieved Hour Data 20:21 hrs
+20:21:0 Arduino sent: North Sensor Temperature = 34.54 °C
+20:21:0 Arduino sent: South Sensor Temperature = 36.12 °C
+20:21:0 Arduino sent: Center Sensor Temperature = 34.15 °C
+20:21:14 Arduino sent: Disabled Heat Resistor
+20:21:17 Arduino sent: Enabled Heat Resistor
+20:22:0 Arduino sent: Recieved Hour Data 20:22 hrs
+20:22:0 Arduino sent: North Sensor Temperature = 34.53 °C
+20:22:0 Arduino sent: South Sensor Temperature = 36.07 °C
+20:22:0 Arduino sent: Center Sensor Temperature = 34.12 °C
+20:23:0 Arduino sent: Recieved Hour Data 20:23 hrs
+20:23:0 Arduino sent: North Sensor Temperature = 34.46 °C
+20:23:0 Arduino sent: South Sensor Temperature = 36.04 °C
+20:23:0 Arduino sent: Center Sensor Temperature = 34.12 °C
+20:24:0 Arduino sent: Recieved Hour Data 20:24 hrs
+20:24:0 Arduino sent: North Sensor Temperature = 34.33 °C
+20:24:0 Arduino sent: South Sensor Temperature = 35.78 °C
+20:24:0 Arduino sent: Center Sensor Temperature = 34.07 °C
+20:25:0 Arduino sent: Recieved Hour Data 20:25 hrs
+20:25:0 Arduino sent: North Sensor Temperature = 34.36 °C
+20:25:0 Arduino sent: South Sensor Temperature = 35.82 °C
+20:25:0 Arduino sent: Center Sensor Temperature = 34.06 °C
+20:26:0 Arduino sent: Recieved Hour Data 20:26 hrs
+20:26:0 Arduino sent: North Sensor Temperature = 34.34 °C
+20:26:0 Arduino sent: South Sensor Temperature = 35.79 °C
+20:26:0 Arduino sent: Center Sensor Temperature = 34.06 °C
+20:27:0 Arduino sent: Recieved Hour Data 20:27 hrs
+20:27:0 Arduino sent: North Sensor Temperature = 34.36 °C
+20:27:0 Arduino sent: South Sensor Temperature = 35.77 °C
+20:27:0 Arduino sent: Center Sensor Temperature = 34.07 °C
+20:28:0 Arduino sent: Recieved Hour Data 20:28 hrs
+20:28:0 Arduino sent: North Sensor Temperature = 34.27 °C
+20:28:0 Arduino sent: South Sensor Temperature = 35.75 °C
+20:28:0 Arduino sent: Center Sensor Temperature = 34.03 °C
+20:29:0 Arduino sent: Recieved Hour Data 20:29 hrs
+20:29:0 Arduino sent: North Sensor Temperature = 34.27 °C
+20:29:0 Arduino sent: South Sensor Temperature = 35.75 °C
+20:29:0 Arduino sent: Center Sensor Temperature = 34.04 °C
+20:30:0 Arduino sent: Recieved Hour Data 20:30 hrs
+20:30:0 Arduino sent: North Sensor Temperature = 34.37 °C
+20:30:0 Arduino sent: South Sensor Temperature = 35.74 °C
+20:30:0 Arduino sent: Center Sensor Temperature = 34.01 °C
+20:31:0 Arduino sent: Recieved Hour Data 20:31 hrs
+20:31:0 Arduino sent: North Sensor Temperature = 34.35 °C
+20:31:0 Arduino sent: South Sensor Temperature = 35.65 °C
+20:31:0 Arduino sent: Center Sensor Temperature = 34.01 °C
+20:32:0 Arduino sent: Recieved Hour Data 20:32 hrs
+20:32:0 Arduino sent: North Sensor Temperature = 34.29 °C
+20:32:0 Arduino sent: South Sensor Temperature = 35.81 °C
+20:32:0 Arduino sent: Center Sensor Temperature = 33.99 °C
+20:33:0 Arduino sent: Recieved Hour Data 20:33 hrs
+20:33:0 Arduino sent: North Sensor Temperature = 34.26 °C
+20:33:0 Arduino sent: South Sensor Temperature = 35.74 °C
+20:33:0 Arduino sent: Center Sensor Temperature = 33.98 °C
+20:34:0 Arduino sent: Recieved Hour Data 20:34 hrs
+20:34:0 Arduino sent: North Sensor Temperature = 34.20 °C
+20:34:0 Arduino sent: South Sensor Temperature = 35.68 °C
+20:34:0 Arduino sent: Center Sensor Temperature = 33.97 °C
+20:35:0 Arduino sent: Recieved Hour Data 20:35 hrs
+20:35:0 Arduino sent: North Sensor Temperature = 34.24 °C
+20:35:0 Arduino sent: South Sensor Temperature = 35.76 °C
+20:35:0 Arduino sent: Center Sensor Temperature = 33.98 °C
+20:36:0 Arduino sent: Recieved Hour Data 20:36 hrs
+20:36:0 Arduino sent: North Sensor Temperature = 34.36 °C
+20:36:0 Arduino sent: South Sensor Temperature = 35.75 °C
+20:36:0 Arduino sent: Center Sensor Temperature = 33.94 °C
+20:37:0 Arduino sent: Recieved Hour Data 20:37 hrs
+20:37:0 Arduino sent: North Sensor Temperature = 34.18 °C
+20:37:0 Arduino sent: South Sensor Temperature = 35.59 °C
+20:37:0 Arduino sent: Center Sensor Temperature = 33.95 °C
+20:38:0 Arduino sent: Recieved Hour Data 20:38 hrs
+20:38:0 Arduino sent: North Sensor Temperature = 34.23 °C
+20:38:0 Arduino sent: South Sensor Temperature = 35.69 °C
+20:38:0 Arduino sent: Center Sensor Temperature = 33.91 °C
+20:39:0 Arduino sent: Recieved Hour Data 20:39 hrs
+20:39:0 Arduino sent: North Sensor Temperature = 34.20 °C
+20:39:0 Arduino sent: South Sensor Temperature = 35.62 °C
+20:39:0 Arduino sent: Center Sensor Temperature = 33.90 °C
+20:40:0 Arduino sent: Recieved Hour Data 20:40 hrs
+20:40:0 Arduino sent: North Sensor Temperature = 34.23 °C
+20:40:0 Arduino sent: South Sensor Temperature = 35.61 °C
+20:40:0 Arduino sent: Center Sensor Temperature = 33.88 °C
+20:41:0 Arduino sent: Recieved Hour Data 20:41 hrs
+20:41:0 Arduino sent: North Sensor Temperature = 34.21 °C
+20:41:0 Arduino sent: South Sensor Temperature = 35.61 °C
+20:41:0 Arduino sent: Center Sensor Temperature = 33.88 °C
+20:42:0 Arduino sent: Recieved Hour Data 20:42 hrs
+20:42:0 Arduino sent: North Sensor Temperature = 34.18 °C
+20:42:0 Arduino sent: South Sensor Temperature = 35.60 °C
+20:42:0 Arduino sent: Center Sensor Temperature = 33.87 °C
+20:43:0 Arduino sent: Recieved Hour Data 20:43 hrs
+20:43:0 Arduino sent: North Sensor Temperature = 34.14 °C
+20:43:0 Arduino sent: South Sensor Temperature = 35.57 °C
+20:43:0 Arduino sent: Center Sensor Temperature = 33.86 °C
+20:44:0 Arduino sent: Recieved Hour Data 20:44 hrs
+20:44:0 Arduino sent: North Sensor Temperature = 34.19 °C
+20:44:0 Arduino sent: South Sensor Temperature = 35.70 °C
+20:44:0 Arduino sent: Center Sensor Temperature = 33.84 °C
+20:45:0 Arduino sent: Recieved Hour Data 20:45 hrs
+20:45:0 Arduino sent: North Sensor Temperature = 34.13 °C
+20:45:0 Arduino sent: South Sensor Temperature = 35.61 °C
+20:45:0 Arduino sent: Center Sensor Temperature = 33.86 °C
+20:46:0 Arduino sent: Recieved Hour Data 20:46 hrs
+20:46:0 Arduino sent: North Sensor Temperature = 34.13 °C
+20:46:0 Arduino sent: South Sensor Temperature = 35.65 °C
+20:46:0 Arduino sent: Center Sensor Temperature = 33.81 °C
+20:47:0 Arduino sent: Recieved Hour Data 20:47 hrs
+20:47:0 Arduino sent: North Sensor Temperature = 34.08 °C
+20:47:0 Arduino sent: South Sensor Temperature = 35.58 °C
+20:47:0 Arduino sent: Center Sensor Temperature = 33.81 °C
+20:48:0 Arduino sent: Recieved Hour Data 20:48 hrs
+20:48:0 Arduino sent: North Sensor Temperature = 34.12 °C
+20:48:0 Arduino sent: South Sensor Temperature = 35.43 °C
+20:48:0 Arduino sent: Center Sensor Temperature = 33.78 °C
+20:49:0 Arduino sent: Recieved Hour Data 20:49 hrs
+20:49:0 Arduino sent: North Sensor Temperature = 34.07 °C
+20:49:0 Arduino sent: South Sensor Temperature = 35.59 °C
+20:49:0 Arduino sent: Center Sensor Temperature = 33.78 °C
+20:50:0 Arduino sent: Recieved Hour Data 20:50 hrs
+20:50:0 Arduino sent: North Sensor Temperature = 34.04 °C
+20:50:0 Arduino sent: South Sensor Temperature = 35.58 °C
+20:50:0 Arduino sent: Center Sensor Temperature = 33.77 °C
+20:51:0 Arduino sent: Recieved Hour Data 20:51 hrs
+20:51:0 Arduino sent: North Sensor Temperature = 34.14 °C
+20:51:0 Arduino sent: South Sensor Temperature = 35.44 °C
+20:51:0 Arduino sent: Center Sensor Temperature = 33.75 °C
+20:52:0 Arduino sent: Recieved Hour Data 20:52 hrs
+20:52:0 Arduino sent: North Sensor Temperature = 33.96 °C
+20:52:0 Arduino sent: South Sensor Temperature = 35.44 °C
+20:52:0 Arduino sent: Center Sensor Temperature = 33.73 °C
+20:53:0 Arduino sent: Recieved Hour Data 20:53 hrs
+20:53:0 Arduino sent: North Sensor Temperature = 34.05 °C
+20:53:0 Arduino sent: South Sensor Temperature = 35.50 °C
+20:53:0 Arduino sent: Center Sensor Temperature = 33.74 °C
+20:54:0 Arduino sent: Recieved Hour Data 20:54 hrs
+20:54:0 Arduino sent: North Sensor Temperature = 33.98 °C
+20:54:0 Arduino sent: South Sensor Temperature = 35.52 °C
+20:54:0 Arduino sent: Center Sensor Temperature = 33.72 °C
+20:55:0 Arduino sent: Recieved Hour Data 20:55 hrs
+20:55:0 Arduino sent: North Sensor Temperature = 33.97 °C
+20:55:0 Arduino sent: South Sensor Temperature = 35.48 °C
+20:55:0 Arduino sent: Center Sensor Temperature = 33.73 °C
+20:56:0 Arduino sent: Recieved Hour Data 20:56 hrs
+20:56:0 Arduino sent: North Sensor Temperature = 34.02 °C
+20:56:0 Arduino sent: South Sensor Temperature = 35.40 °C
+20:56:0 Arduino sent: Center Sensor Temperature = 33.71 °C
+20:57:0 Arduino sent: Recieved Hour Data 20:57 hrs
+20:57:0 Arduino sent: North Sensor Temperature = 33.98 °C
+20:57:0 Arduino sent: South Sensor Temperature = 35.45 °C
+20:57:0 Arduino sent: Center Sensor Temperature = 33.69 °C
+20:58:0 Arduino sent: Recieved Hour Data 20:58 hrs
+20:58:0 Arduino sent: North Sensor Temperature = 34.03 °C
+20:58:0 Arduino sent: South Sensor Temperature = 35.45 °C
+20:58:0 Arduino sent: Center Sensor Temperature = 33.68 °C
+20:59:0 Arduino sent: Recieved Hour Data 20:59 hrs
+20:59:0 Arduino sent: North Sensor Temperature = 33.98 °C
+20:59:0 Arduino sent: South Sensor Temperature = 35.39 °C
+20:59:0 Arduino sent: Center Sensor Temperature = 33.65 °C
+21:0:0 Arduino sent: Recieved Hour Data 21:00 hrs
+21:0:0 Arduino sent: LED: Turn On
+21:0:0 Arduino sent: North Sensor Temperature = 33.99 °C
+21:0:0 Arduino sent: South Sensor Temperature = 35.44 °C
+21:0:0 Arduino sent: Center Sensor Temperature = 33.64 °C
+21:1:0 Arduino sent: Recieved Hour Data 21:01 hrs
+21:1:0 Arduino sent: North Sensor Temperature = 33.94 °C
+21:1:0 Arduino sent: South Sensor Temperature = 35.35 °C
+21:1:0 Arduino sent: Center Sensor Temperature = 33.62 °C
+21:2:0 Arduino sent: Recieved Hour Data 21:02 hrs
+21:2:0 Arduino sent: North Sensor Temperature = 33.83 °C
+21:2:0 Arduino sent: South Sensor Temperature = 35.34 °C
+21:2:0 Arduino sent: Center Sensor Temperature = 33.62 °C
+21:3:0 Arduino sent: Recieved Hour Data 21:03 hrs
+21:3:0 Arduino sent: North Sensor Temperature = 33.87 °C
+21:3:0 Arduino sent: South Sensor Temperature = 35.34 °C
+21:3:0 Arduino sent: Center Sensor Temperature = 33.59 °C
+21:4:0 Arduino sent: Recieved Hour Data 21:04 hrs
+21:4:0 Arduino sent: North Sensor Temperature = 33.86 °C
+21:4:0 Arduino sent: South Sensor Temperature = 35.34 °C
+21:4:0 Arduino sent: Center Sensor Temperature = 33.60 °C
+21:5:0 Arduino sent: Recieved Hour Data 21:05 hrs
+21:5:0 Arduino sent: North Sensor Temperature = 33.82 °C
+21:5:0 Arduino sent: South Sensor Temperature = 35.35 °C
+21:5:0 Arduino sent: Center Sensor Temperature = 33.56 °C
+21:6:0 Arduino sent: Recieved Hour Data 21:06 hrs
+21:6:0 Arduino sent: North Sensor Temperature = 33.90 °C
+21:6:0 Arduino sent: South Sensor Temperature = 35.33 °C
+21:6:0 Arduino sent: Center Sensor Temperature = 33.56 °C
+21:7:0 Arduino sent: Recieved Hour Data 21:07 hrs
+21:7:0 Arduino sent: North Sensor Temperature = 33.94 °C
+21:7:0 Arduino sent: South Sensor Temperature = 35.30 °C
+21:7:0 Arduino sent: Center Sensor Temperature = 33.55 °C
+21:8:0 Arduino sent: Recieved Hour Data 21:08 hrs
+21:8:0 Arduino sent: North Sensor Temperature = 33.83 °C
+21:8:0 Arduino sent: South Sensor Temperature = 35.38 °C
+21:8:0 Arduino sent: Center Sensor Temperature = 33.52 °C
+21:9:0 Arduino sent: Recieved Hour Data 21:09 hrs
+21:9:0 Arduino sent: North Sensor Temperature = 33.82 °C
+21:9:0 Arduino sent: South Sensor Temperature = 35.30 °C
+21:9:0 Arduino sent: Center Sensor Temperature = 33.51 °C
+21:10:0 Arduino sent: Recieved Hour Data 21:10 hrs
+21:10:0 Arduino sent: North Sensor Temperature = 33.86 °C
+21:10:0 Arduino sent: South Sensor Temperature = 35.34 °C
+21:10:0 Arduino sent: Center Sensor Temperature = 33.50 °C
+21:11:0 Arduino sent: Recieved Hour Data 21:11 hrs
+21:11:0 Arduino sent: North Sensor Temperature = 33.77 °C
+21:11:0 Arduino sent: South Sensor Temperature = 35.18 °C
+21:11:0 Arduino sent: Center Sensor Temperature = 33.47 °C
+21:12:0 Arduino sent: Recieved Hour Data 21:12 hrs
+21:12:0 Arduino sent: North Sensor Temperature = 33.72 °C
+21:12:0 Arduino sent: South Sensor Temperature = 35.19 °C
+21:12:0 Arduino sent: Center Sensor Temperature = 33.44 °C
+21:13:0 Arduino sent: Recieved Hour Data 21:13 hrs
+21:13:0 Arduino sent: North Sensor Temperature = 33.74 °C
+21:13:0 Arduino sent: South Sensor Temperature = 35.23 °C
+21:13:0 Arduino sent: Center Sensor Temperature = 33.44 °C
+21:14:0 Arduino sent: Recieved Hour Data 21:14 hrs
+21:14:0 Arduino sent: North Sensor Temperature = 33.71 °C
+21:14:0 Arduino sent: South Sensor Temperature = 35.15 °C
+21:14:0 Arduino sent: Center Sensor Temperature = 33.43 °C
+21:15:0 Arduino sent: Recieved Hour Data 21:15 hrs
+21:15:0 Arduino sent: North Sensor Temperature = 33.73 °C
+21:15:0 Arduino sent: South Sensor Temperature = 35.13 °C
+21:15:0 Arduino sent: Center Sensor Temperature = 33.42 °C
+21:16:0 Arduino sent: Recieved Hour Data 21:16 hrs
+21:16:0 Arduino sent: North Sensor Temperature = 33.67 °C
+21:16:0 Arduino sent: South Sensor Temperature = 35.23 °C
+21:16:0 Arduino sent: Center Sensor Temperature = 33.40 °C
+21:17:0 Arduino sent: Recieved Hour Data 21:17 hrs
+21:17:0 Arduino sent: North Sensor Temperature = 33.70 °C
+21:17:0 Arduino sent: South Sensor Temperature = 35.25 °C
+21:17:0 Arduino sent: Center Sensor Temperature = 33.43 °C
+21:18:0 Arduino sent: Recieved Hour Data 21:18 hrs
+21:18:0 Arduino sent: North Sensor Temperature = 33.70 °C
+21:18:0 Arduino sent: South Sensor Temperature = 35.18 °C
+21:18:0 Arduino sent: Center Sensor Temperature = 33.39 °C
+21:19:0 Arduino sent: Recieved Hour Data 21:19 hrs
+21:19:0 Arduino sent: North Sensor Temperature = 33.73 °C
+21:19:0 Arduino sent: South Sensor Temperature = 35.19 °C
+21:19:0 Arduino sent: Center Sensor Temperature = 33.38 °C
+21:20:0 Arduino sent: Recieved Hour Data 21:20 hrs
+21:20:0 Arduino sent: North Sensor Temperature = 33.63 °C
+21:20:0 Arduino sent: South Sensor Temperature = 35.14 °C
+21:20:0 Arduino sent: Center Sensor Temperature = 33.38 °C
+21:21:0 Arduino sent: Recieved Hour Data 21:21 hrs
+21:21:0 Arduino sent: North Sensor Temperature = 33.63 °C
+21:21:0 Arduino sent: South Sensor Temperature = 35.14 °C
+21:21:0 Arduino sent: Center Sensor Temperature = 33.37 °C
+21:22:0 Arduino sent: Recieved Hour Data 21:22 hrs
+21:22:0 Arduino sent: North Sensor Temperature = 33.62 °C
+21:22:0 Arduino sent: South Sensor Temperature = 35.14 °C
+21:22:0 Arduino sent: Center Sensor Temperature = 33.34 °C
+21:23:0 Arduino sent: Recieved Hour Data 21:23 hrs
+21:23:0 Arduino sent: North Sensor Temperature = 33.69 °C
+21:23:0 Arduino sent: South Sensor Temperature = 35.09 °C
+21:23:0 Arduino sent: Center Sensor Temperature = 33.33 °C
+21:24:0 Arduino sent: Recieved Hour Data 21:24 hrs
+21:24:0 Arduino sent: North Sensor Temperature = 33.59 °C
+21:24:0 Arduino sent: South Sensor Temperature = 35.16 °C
+21:24:0 Arduino sent: Center Sensor Temperature = 33.31 °C
+21:25:0 Arduino sent: Recieved Hour Data 21:25 hrs
+21:25:0 Arduino sent: North Sensor Temperature = 33.63 °C
+21:25:0 Arduino sent: South Sensor Temperature = 35.07 °C
+21:25:0 Arduino sent: Center Sensor Temperature = 33.31 °C
+21:26:0 Arduino sent: Recieved Hour Data 21:26 hrs
+21:26:0 Arduino sent: North Sensor Temperature = 33.60 °C
+21:26:0 Arduino sent: South Sensor Temperature = 35.09 °C
+21:26:0 Arduino sent: Center Sensor Temperature = 33.30 °C
+21:27:0 Arduino sent: Recieved Hour Data 21:27 hrs
+21:27:0 Arduino sent: North Sensor Temperature = 33.59 °C
+21:27:0 Arduino sent: South Sensor Temperature = 35.07 °C
+21:27:0 Arduino sent: Center Sensor Temperature = 33.29 °C
+21:28:0 Arduino sent: Recieved Hour Data 21:28 hrs
+21:28:0 Arduino sent: North Sensor Temperature = 33.58 °C
+21:28:0 Arduino sent: South Sensor Temperature = 35.13 °C
+21:28:0 Arduino sent: Center Sensor Temperature = 33.29 °C
+21:29:0 Arduino sent: Recieved Hour Data 21:29 hrs
+21:29:0 Arduino sent: North Sensor Temperature = 33.56 °C
+21:29:0 Arduino sent: South Sensor Temperature = 35.06 °C
+21:29:0 Arduino sent: Center Sensor Temperature = 33.28 °C
+21:30:0 Arduino sent: Recieved Hour Data 21:30 hrs
+21:30:0 Arduino sent: North Sensor Temperature = 33.53 °C
+21:30:0 Arduino sent: South Sensor Temperature = 35.05 °C
+21:30:0 Arduino sent: Center Sensor Temperature = 33.25 °C
+21:31:0 Arduino sent: Recieved Hour Data 21:31 hrs
+21:31:0 Arduino sent: North Sensor Temperature = 33.55 °C
+21:31:0 Arduino sent: South Sensor Temperature = 35.09 °C
+21:31:0 Arduino sent: Center Sensor Temperature = 33.25 °C
+21:32:0 Arduino sent: Recieved Hour Data 21:32 hrs
+21:32:0 Arduino sent: North Sensor Temperature = 33.53 °C
+21:32:0 Arduino sent: South Sensor Temperature = 35.00 °C
+21:32:0 Arduino sent: Center Sensor Temperature = 33.24 °C
+21:33:0 Arduino sent: Recieved Hour Data 21:33 hrs
+21:33:0 Arduino sent: North Sensor Temperature = 33.49 °C
+21:33:0 Arduino sent: South Sensor Temperature = 35.05 °C
+21:33:0 Arduino sent: Center Sensor Temperature = 33.20 °C
+21:34:0 Arduino sent: Recieved Hour Data 21:34 hrs
+21:34:0 Arduino sent: North Sensor Temperature = 33.51 °C
+21:34:0 Arduino sent: South Sensor Temperature = 35.04 °C
+21:34:0 Arduino sent: Center Sensor Temperature = 33.19 °C
+21:35:0 Arduino sent: Recieved Hour Data 21:35 hrs
+21:35:0 Arduino sent: North Sensor Temperature = 33.53 °C
+21:35:0 Arduino sent: South Sensor Temperature = 35.01 °C
+21:35:0 Arduino sent: Center Sensor Temperature = 33.19 °C
+21:36:0 Arduino sent: Recieved Hour Data 21:36 hrs
+21:36:0 Arduino sent: North Sensor Temperature = 33.44 °C
+21:36:0 Arduino sent: South Sensor Temperature = 34.95 °C
+21:36:0 Arduino sent: Center Sensor Temperature = 33.17 °C
+21:37:0 Arduino sent: Recieved Hour Data 21:37 hrs
+21:37:0 Arduino sent: North Sensor Temperature = 33.50 °C
+21:37:0 Arduino sent: South Sensor Temperature = 34.97 °C
+21:37:0 Arduino sent: Center Sensor Temperature = 33.16 °C
+21:38:0 Arduino sent: Recieved Hour Data 21:38 hrs
+21:38:0 Arduino sent: North Sensor Temperature = 33.48 °C
+21:38:0 Arduino sent: South Sensor Temperature = 35.04 °C
+21:38:0 Arduino sent: Center Sensor Temperature = 33.18 °C
+21:39:0 Arduino sent: Recieved Hour Data 21:39 hrs
+21:39:0 Arduino sent: North Sensor Temperature = 33.46 °C
+21:39:0 Arduino sent: South Sensor Temperature = 34.99 °C
+21:39:0 Arduino sent: Center Sensor Temperature = 33.13 °C
+21:40:0 Arduino sent: Recieved Hour Data 21:40 hrs
+21:40:0 Arduino sent: North Sensor Temperature = 33.47 °C
+21:40:0 Arduino sent: South Sensor Temperature = 34.99 °C
+21:40:0 Arduino sent: Center Sensor Temperature = 33.12 °C
+21:41:0 Arduino sent: Recieved Hour Data 21:41 hrs
+21:41:0 Arduino sent: North Sensor Temperature = 33.44 °C
+21:41:0 Arduino sent: South Sensor Temperature = 34.87 °C
+21:41:0 Arduino sent: Center Sensor Temperature = 33.12 °C
+21:42:0 Arduino sent: Recieved Hour Data 21:42 hrs
+21:42:0 Arduino sent: North Sensor Temperature = 33.38 °C
+21:42:0 Arduino sent: South Sensor Temperature = 34.90 °C
+21:42:0 Arduino sent: Center Sensor Temperature = 33.10 °C
+21:43:0 Arduino sent: Recieved Hour Data 21:43 hrs
+21:43:0 Arduino sent: North Sensor Temperature = 33.31 °C
+21:43:0 Arduino sent: South Sensor Temperature = 34.88 °C
+21:43:0 Arduino sent: Center Sensor Temperature = 33.06 °C
+21:44:0 Arduino sent: Recieved Hour Data 21:44 hrs
+21:44:0 Arduino sent: North Sensor Temperature = 33.37 °C
+21:44:0 Arduino sent: South Sensor Temperature = 34.86 °C
+21:44:0 Arduino sent: Center Sensor Temperature = 33.06 °C
+21:45:0 Arduino sent: Recieved Hour Data 21:45 hrs
+21:45:0 Arduino sent: North Sensor Temperature = 33.34 °C
+21:45:0 Arduino sent: South Sensor Temperature = 34.84 °C
+21:45:0 Arduino sent: Center Sensor Temperature = 33.04 °C
+21:46:0 Arduino sent: Recieved Hour Data 21:46 hrs
+21:46:0 Arduino sent: North Sensor Temperature = 33.38 °C
+21:46:0 Arduino sent: South Sensor Temperature = 34.93 °C
+21:46:0 Arduino sent: Center Sensor Temperature = 33.05 °C
+21:47:0 Arduino sent: Recieved Hour Data 21:47 hrs
+21:47:0 Arduino sent: North Sensor Temperature = 33.30 °C
+21:47:0 Arduino sent: South Sensor Temperature = 34.88 °C
+21:47:0 Arduino sent: Center Sensor Temperature = 33.01 °C
+21:48:0 Arduino sent: Recieved Hour Data 21:48 hrs
+21:48:0 Arduino sent: North Sensor Temperature = 33.27 °C
+21:48:0 Arduino sent: South Sensor Temperature = 34.84 °C
+21:48:0 Arduino sent: Center Sensor Temperature = 33.00 °C
+21:49:0 Arduino sent: Recieved Hour Data 21:49 hrs
+21:49:0 Arduino sent: North Sensor Temperature = 33.28 °C
+21:49:0 Arduino sent: South Sensor Temperature = 34.86 °C
+21:49:0 Arduino sent: Center Sensor Temperature = 33.00 °C
+21:50:0 Arduino sent: Recieved Hour Data 21:50 hrs
+21:50:0 Arduino sent: North Sensor Temperature = 33.36 °C
+21:50:0 Arduino sent: South Sensor Temperature = 34.90 °C
+21:50:0 Arduino sent: Center Sensor Temperature = 33.00 °C
+21:51:0 Arduino sent: Recieved Hour Data 21:51 hrs
+21:51:0 Arduino sent: North Sensor Temperature = 33.26 °C
+21:51:0 Arduino sent: South Sensor Temperature = 34.74 °C
+21:51:0 Arduino sent: Center Sensor Temperature = 32.98 °C
+21:52:0 Arduino sent: Recieved Hour Data 21:52 hrs
+21:52:0 Arduino sent: North Sensor Temperature = 33.31 °C
+21:52:0 Arduino sent: South Sensor Temperature = 34.86 °C
+21:52:0 Arduino sent: Center Sensor Temperature = 32.94 °C
+21:53:0 Arduino sent: Recieved Hour Data 21:53 hrs
+21:53:0 Arduino sent: North Sensor Temperature = 33.30 °C
+21:53:0 Arduino sent: South Sensor Temperature = 34.88 °C
+21:53:0 Arduino sent: Center Sensor Temperature = 32.94 °C
+21:54:0 Arduino sent: Recieved Hour Data 21:54 hrs
+21:54:0 Arduino sent: North Sensor Temperature = 33.24 °C
+21:54:0 Arduino sent: South Sensor Temperature = 34.81 °C
+21:54:0 Arduino sent: Center Sensor Temperature = 32.93 °C
+21:55:0 Arduino sent: Recieved Hour Data 21:55 hrs
+21:55:0 Arduino sent: North Sensor Temperature = 33.25 °C
+21:55:0 Arduino sent: South Sensor Temperature = 34.81 °C
+21:55:0 Arduino sent: Center Sensor Temperature = 32.90 °C
+21:56:0 Arduino sent: Recieved Hour Data 21:56 hrs
+21:56:0 Arduino sent: North Sensor Temperature = 33.23 °C
+21:56:0 Arduino sent: South Sensor Temperature = 34.76 °C
+21:56:0 Arduino sent: Center Sensor Temperature = 32.88 °C
+21:57:0 Arduino sent: Recieved Hour Data 21:57 hrs
+21:57:0 Arduino sent: North Sensor Temperature = 33.26 °C
+21:57:0 Arduino sent: South Sensor Temperature = 34.75 °C
+21:57:0 Arduino sent: Center Sensor Temperature = 32.87 °C
+21:58:0 Arduino sent: Recieved Hour Data 21:58 hrs
+21:58:0 Arduino sent: North Sensor Temperature = 33.11 °C
+21:58:0 Arduino sent: South Sensor Temperature = 34.69 °C
+21:58:0 Arduino sent: Center Sensor Temperature = 32.86 °C
+21:59:0 Arduino sent: Recieved Hour Data 21:59 hrs
+21:59:0 Arduino sent: North Sensor Temperature = 33.18 °C
+21:59:0 Arduino sent: South Sensor Temperature = 34.67 °C
+21:59:0 Arduino sent: Center Sensor Temperature = 32.83 °C
+22:0:0 Arduino sent: Recieved Hour Data 22:00 hrs
+22:0:0 Arduino sent: North Sensor Temperature = 33.19 °C
+22:0:0 Arduino sent: South Sensor Temperature = 34.74 °C
+22:0:0 Arduino sent: Center Sensor Temperature = 32.82 °C
+22:1:0 Arduino sent: Recieved Hour Data 22:01 hrs
+22:1:0 Arduino sent: North Sensor Temperature = 33.16 °C
+22:1:0 Arduino sent: South Sensor Temperature = 34.72 °C
+22:1:0 Arduino sent: Center Sensor Temperature = 32.81 °C
+22:2:0 Arduino sent: Recieved Hour Data 22:02 hrs
+22:2:0 Arduino sent: North Sensor Temperature = 33.13 °C
+22:2:0 Arduino sent: South Sensor Temperature = 34.71 °C
+22:2:0 Arduino sent: Center Sensor Temperature = 32.79 °C
+22:3:0 Arduino sent: Recieved Hour Data 22:03 hrs
+22:3:0 Arduino sent: North Sensor Temperature = 33.12 °C
+22:3:0 Arduino sent: South Sensor Temperature = 34.65 °C
+22:3:0 Arduino sent: Center Sensor Temperature = 32.79 °C
+22:4:0 Arduino sent: Recieved Hour Data 22:04 hrs
+22:4:0 Arduino sent: North Sensor Temperature = 33.16 °C
+22:4:0 Arduino sent: South Sensor Temperature = 34.64 °C
+22:4:0 Arduino sent: Center Sensor Temperature = 32.77 °C
+22:5:0 Arduino sent: Recieved Hour Data 22:05 hrs
+22:5:0 Arduino sent: North Sensor Temperature = 33.07 °C
+22:5:0 Arduino sent: South Sensor Temperature = 34.66 °C
+22:5:0 Arduino sent: Center Sensor Temperature = 32.74 °C
+22:6:0 Arduino sent: Recieved Hour Data 22:06 hrs
+22:6:0 Arduino sent: North Sensor Temperature = 32.99 °C
+22:6:0 Arduino sent: South Sensor Temperature = 34.66 °C
+22:6:0 Arduino sent: Center Sensor Temperature = 32.73 °C
+22:7:0 Arduino sent: Recieved Hour Data 22:07 hrs
+22:7:0 Arduino sent: North Sensor Temperature = 33.06 °C
+22:7:0 Arduino sent: South Sensor Temperature = 34.58 °C
+22:7:0 Arduino sent: Center Sensor Temperature = 32.71 °C
+22:8:0 Arduino sent: Recieved Hour Data 22:08 hrs
+22:8:0 Arduino sent: North Sensor Temperature = 32.99 °C
+22:8:0 Arduino sent: South Sensor Temperature = 34.49 °C
+22:8:0 Arduino sent: Center Sensor Temperature = 32.69 °C
+22:9:0 Arduino sent: Recieved Hour Data 22:09 hrs
+22:9:0 Arduino sent: North Sensor Temperature = 33.02 °C
+22:9:0 Arduino sent: South Sensor Temperature = 34.50 °C
+22:9:0 Arduino sent: Center Sensor Temperature = 32.69 °C
+22:10:0 Arduino sent: Recieved Hour Data 22:10 hrs
+22:10:0 Arduino sent: North Sensor Temperature = 32.91 °C
+22:10:0 Arduino sent: South Sensor Temperature = 34.51 °C
+22:10:0 Arduino sent: Center Sensor Temperature = 32.69 °C
+22:11:0 Arduino sent: Recieved Hour Data 22:11 hrs
+22:11:0 Arduino sent: North Sensor Temperature = 33.02 °C
+22:11:0 Arduino sent: South Sensor Temperature = 34.47 °C
+22:11:0 Arduino sent: Center Sensor Temperature = 32.69 °C
+22:12:0 Arduino sent: Recieved Hour Data 22:12 hrs
+22:12:0 Arduino sent: North Sensor Temperature = 33.05 °C
+22:12:0 Arduino sent: South Sensor Temperature = 34.53 °C
+22:12:0 Arduino sent: Center Sensor Temperature = 32.64 °C
+22:13:0 Arduino sent: Recieved Hour Data 22:13 hrs
+22:13:0 Arduino sent: North Sensor Temperature = 33.07 °C
+22:13:0 Arduino sent: South Sensor Temperature = 34.54 °C
+22:13:0 Arduino sent: Center Sensor Temperature = 32.64 °C
+22:14:0 Arduino sent: Recieved Hour Data 22:14 hrs
+22:14:0 Arduino sent: North Sensor Temperature = 32.99 °C
+22:14:0 Arduino sent: South Sensor Temperature = 34.51 °C
+22:14:0 Arduino sent: Center Sensor Temperature = 32.62 °C
+22:15:0 Arduino sent: Recieved Hour Data 22:15 hrs
+22:15:0 Arduino sent: North Sensor Temperature = 32.89 °C
+22:15:0 Arduino sent: South Sensor Temperature = 34.47 °C
+22:15:0 Arduino sent: Center Sensor Temperature = 32.62 °C
+22:16:0 Arduino sent: Recieved Hour Data 22:16 hrs
+22:16:0 Arduino sent: North Sensor Temperature = 32.95 °C
+22:16:0 Arduino sent: South Sensor Temperature = 34.40 °C
+22:16:0 Arduino sent: Center Sensor Temperature = 32.61 °C
+22:17:0 Arduino sent: Recieved Hour Data 22:17 hrs
+22:17:0 Arduino sent: North Sensor Temperature = 32.91 °C
+22:17:0 Arduino sent: South Sensor Temperature = 34.38 °C
+22:17:0 Arduino sent: Center Sensor Temperature = 32.59 °C
+22:18:0 Arduino sent: Recieved Hour Data 22:18 hrs
+22:18:0 Arduino sent: North Sensor Temperature = 32.89 °C
+22:18:0 Arduino sent: South Sensor Temperature = 34.46 °C
+22:18:0 Arduino sent: Center Sensor Temperature = 32.57 °C
+22:19:0 Arduino sent: Recieved Hour Data 22:19 hrs
+22:19:0 Arduino sent: North Sensor Temperature = 32.84 °C
+22:19:0 Arduino sent: South Sensor Temperature = 34.44 °C
+22:19:0 Arduino sent: Center Sensor Temperature = 32.56 °C
+22:20:0 Arduino sent: Recieved Hour Data 22:20 hrs
+22:20:0 Arduino sent: North Sensor Temperature = 32.90 °C
+22:20:0 Arduino sent: South Sensor Temperature = 34.38 °C
+22:20:0 Arduino sent: Center Sensor Temperature = 32.55 °C
+22:21:0 Arduino sent: Recieved Hour Data 22:21 hrs
+22:21:0 Arduino sent: North Sensor Temperature = 32.87 °C
+22:21:0 Arduino sent: South Sensor Temperature = 34.37 °C
+22:21:0 Arduino sent: Center Sensor Temperature = 32.51 °C
+22:22:0 Arduino sent: Recieved Hour Data 22:22 hrs
+22:22:0 Arduino sent: North Sensor Temperature = 32.90 °C
+22:22:0 Arduino sent: South Sensor Temperature = 34.43 °C
+22:22:0 Arduino sent: Center Sensor Temperature = 32.52 °C
+22:23:0 Arduino sent: Recieved Hour Data 22:23 hrs
+22:23:0 Arduino sent: North Sensor Temperature = 32.91 °C
+22:23:0 Arduino sent: South Sensor Temperature = 34.44 °C
+22:23:0 Arduino sent: Center Sensor Temperature = 32.50 °C
+22:24:0 Arduino sent: Recieved Hour Data 22:24 hrs
+22:24:0 Arduino sent: North Sensor Temperature = 32.83 °C
+22:24:0 Arduino sent: South Sensor Temperature = 34.51 °C
+22:24:0 Arduino sent: Center Sensor Temperature = 32.50 °C
+22:25:0 Arduino sent: Recieved Hour Data 22:25 hrs
+22:25:0 Arduino sent: North Sensor Temperature = 32.90 °C
+22:25:0 Arduino sent: South Sensor Temperature = 34.42 °C
+22:25:0 Arduino sent: Center Sensor Temperature = 32.49 °C
+22:26:0 Arduino sent: Recieved Hour Data 22:26 hrs
+22:26:0 Arduino sent: North Sensor Temperature = 32.92 °C
+22:26:0 Arduino sent: South Sensor Temperature = 34.36 °C
+22:26:0 Arduino sent: Center Sensor Temperature = 32.48 °C
+22:27:0 Arduino sent: Recieved Hour Data 22:27 hrs
+22:27:0 Arduino sent: North Sensor Temperature = 32.76 °C
+22:27:0 Arduino sent: South Sensor Temperature = 34.25 °C
+22:27:0 Arduino sent: Center Sensor Temperature = 32.44 °C
+22:28:0 Arduino sent: Recieved Hour Data 22:28 hrs
+22:28:0 Arduino sent: North Sensor Temperature = 32.78 °C
+22:28:0 Arduino sent: South Sensor Temperature = 34.29 °C
+22:28:0 Arduino sent: Center Sensor Temperature = 32.44 °C
+22:29:0 Arduino sent: Recieved Hour Data 22:29 hrs
+22:29:0 Arduino sent: North Sensor Temperature = 32.77 °C
+22:29:0 Arduino sent: South Sensor Temperature = 34.38 °C
+22:29:0 Arduino sent: Center Sensor Temperature = 32.43 °C
+22:30:0 Arduino sent: Recieved Hour Data 22:30 hrs
+22:30:0 Arduino sent: North Sensor Temperature = 32.75 °C
+22:30:0 Arduino sent: South Sensor Temperature = 34.28 °C
+22:30:0 Arduino sent: Center Sensor Temperature = 32.40 °C
+22:31:0 Arduino sent: Recieved Hour Data 22:31 hrs
+22:31:0 Arduino sent: North Sensor Temperature = 32.74 °C
+22:31:0 Arduino sent: South Sensor Temperature = 34.25 °C
+22:31:0 Arduino sent: Center Sensor Temperature = 32.38 °C
+22:32:0 Arduino sent: Recieved Hour Data 22:32 hrs
+22:32:0 Arduino sent: North Sensor Temperature = 32.72 °C
+22:32:0 Arduino sent: South Sensor Temperature = 34.27 °C
+22:32:0 Arduino sent: Center Sensor Temperature = 32.37 °C
+22:33:0 Arduino sent: Recieved Hour Data 22:33 hrs
+22:33:0 Arduino sent: North Sensor Temperature = 32.68 °C
+22:33:0 Arduino sent: South Sensor Temperature = 34.36 °C
+22:33:0 Arduino sent: Center Sensor Temperature = 32.37 °C
+22:34:0 Arduino sent: Recieved Hour Data 22:34 hrs
+22:34:0 Arduino sent: North Sensor Temperature = 32.73 °C
+22:34:0 Arduino sent: South Sensor Temperature = 34.33 °C
+22:34:0 Arduino sent: Center Sensor Temperature = 32.35 °C
+22:35:0 Arduino sent: Recieved Hour Data 22:35 hrs
+22:35:0 Arduino sent: North Sensor Temperature = 32.62 °C
+22:35:0 Arduino sent: South Sensor Temperature = 34.24 °C
+22:35:0 Arduino sent: Center Sensor Temperature = 32.33 °C
+22:36:0 Arduino sent: Recieved Hour Data 22:36 hrs
+22:36:0 Arduino sent: North Sensor Temperature = 32.64 °C
+22:36:0 Arduino sent: South Sensor Temperature = 34.24 °C
+22:36:0 Arduino sent: Center Sensor Temperature = 32.32 °C
+22:37:0 Arduino sent: Recieved Hour Data 22:37 hrs
+22:37:0 Arduino sent: North Sensor Temperature = 32.66 °C
+22:37:0 Arduino sent: South Sensor Temperature = 34.25 °C
+22:37:0 Arduino sent: Center Sensor Temperature = 32.32 °C
+22:38:0 Arduino sent: Recieved Hour Data 22:38 hrs
+22:38:0 Arduino sent: North Sensor Temperature = 32.56 °C
+22:38:0 Arduino sent: South Sensor Temperature = 34.17 °C
+22:38:0 Arduino sent: Center Sensor Temperature = 32.29 °C
+22:39:0 Arduino sent: Recieved Hour Data 22:39 hrs
+22:39:0 Arduino sent: North Sensor Temperature = 32.63 °C
+22:39:0 Arduino sent: South Sensor Temperature = 34.13 °C
+22:39:0 Arduino sent: Center Sensor Temperature = 32.27 °C
+22:40:0 Arduino sent: Recieved Hour Data 22:40 hrs
+22:40:0 Arduino sent: North Sensor Temperature = 32.55 °C
+22:40:0 Arduino sent: South Sensor Temperature = 34.17 °C
+22:40:0 Arduino sent: Center Sensor Temperature = 32.28 °C
+22:41:0 Arduino sent: Recieved Hour Data 22:41 hrs
+22:41:0 Arduino sent: North Sensor Temperature = 32.55 °C
+22:41:0 Arduino sent: South Sensor Temperature = 34.14 °C
+22:41:0 Arduino sent: Center Sensor Temperature = 32.25 °C
+22:42:0 Arduino sent: Recieved Hour Data 22:42 hrs
+22:42:0 Arduino sent: North Sensor Temperature = 32.54 °C
+22:42:0 Arduino sent: South Sensor Temperature = 34.07 °C
+22:42:0 Arduino sent: Center Sensor Temperature = 32.25 °C
+22:43:0 Arduino sent: Recieved Hour Data 22:43 hrs
+22:43:0 Arduino sent: North Sensor Temperature = 32.55 °C
+22:43:0 Arduino sent: South Sensor Temperature = 34.11 °C
+22:43:0 Arduino sent: Center Sensor Temperature = 32.25 °C
+22:44:0 Arduino sent: Recieved Hour Data 22:44 hrs
+22:44:0 Arduino sent: North Sensor Temperature = 32.61 °C
+22:44:0 Arduino sent: South Sensor Temperature = 34.10 °C
+22:44:0 Arduino sent: Center Sensor Temperature = 32.24 °C
+22:45:0 Arduino sent: Recieved Hour Data 22:45 hrs
+22:45:0 Arduino sent: North Sensor Temperature = 32.48 °C
+22:45:0 Arduino sent: South Sensor Temperature = 34.12 °C
+22:45:0 Arduino sent: Center Sensor Temperature = 32.21 °C
+22:46:0 Arduino sent: Recieved Hour Data 22:46 hrs
+22:46:0 Arduino sent: North Sensor Temperature = 32.56 °C
+22:46:0 Arduino sent: South Sensor Temperature = 34.10 °C
+22:46:0 Arduino sent: Center Sensor Temperature = 32.22 °C
+22:47:0 Arduino sent: Recieved Hour Data 22:47 hrs
+22:47:0 Arduino sent: North Sensor Temperature = 32.56 °C
+22:47:0 Arduino sent: South Sensor Temperature = 34.07 °C
+22:47:0 Arduino sent: Center Sensor Temperature = 32.19 °C
+22:48:0 Arduino sent: Recieved Hour Data 22:48 hrs
+22:48:0 Arduino sent: North Sensor Temperature = 32.51 °C
+22:48:0 Arduino sent: South Sensor Temperature = 34.09 °C
+22:48:0 Arduino sent: Center Sensor Temperature = 32.19 °C
+22:49:0 Arduino sent: Recieved Hour Data 22:49 hrs
+22:49:0 Arduino sent: North Sensor Temperature = 32.49 °C
+22:49:0 Arduino sent: South Sensor Temperature = 34.12 °C
+22:49:0 Arduino sent: Center Sensor Temperature = 32.18 °C
+22:50:0 Arduino sent: Recieved Hour Data 22:50 hrs
+22:50:0 Arduino sent: North Sensor Temperature = 32.50 °C
+22:50:0 Arduino sent: South Sensor Temperature = 34.00 °C
+22:50:0 Arduino sent: Center Sensor Temperature = 32.15 °C
+22:51:0 Arduino sent: Recieved Hour Data 22:51 hrs
+22:51:0 Arduino sent: North Sensor Temperature = 32.50 °C
+22:51:0 Arduino sent: South Sensor Temperature = 34.01 °C
+22:51:0 Arduino sent: Center Sensor Temperature = 32.12 °C
+22:52:0 Arduino sent: Recieved Hour Data 22:52 hrs
+22:52:0 Arduino sent: North Sensor Temperature = 32.48 °C
+22:52:0 Arduino sent: South Sensor Temperature = 33.99 °C
+22:52:0 Arduino sent: Center Sensor Temperature = 32.13 °C
+22:53:0 Arduino sent: Recieved Hour Data 22:53 hrs
+22:53:0 Arduino sent: North Sensor Temperature = 32.47 °C
+22:53:0 Arduino sent: South Sensor Temperature = 34.04 °C
+22:53:0 Arduino sent: Center Sensor Temperature = 32.11 °C
+22:54:0 Arduino sent: Recieved Hour Data 22:54 hrs
+22:54:0 Arduino sent: North Sensor Temperature = 32.45 °C
+22:54:0 Arduino sent: South Sensor Temperature = 33.98 °C
+22:54:0 Arduino sent: Center Sensor Temperature = 32.09 °C
+22:55:0 Arduino sent: Recieved Hour Data 22:55 hrs
+22:55:0 Arduino sent: North Sensor Temperature = 32.51 °C
+22:55:0 Arduino sent: South Sensor Temperature = 33.96 °C
+22:55:0 Arduino sent: Center Sensor Temperature = 32.07 °C
+22:56:0 Arduino sent: Recieved Hour Data 22:56 hrs
+22:56:0 Arduino sent: North Sensor Temperature = 32.43 °C
+22:56:0 Arduino sent: South Sensor Temperature = 33.90 °C
+22:56:0 Arduino sent: Center Sensor Temperature = 32.08 °C
+22:57:0 Arduino sent: Recieved Hour Data 22:57 hrs
+22:57:0 Arduino sent: North Sensor Temperature = 32.46 °C
+22:57:0 Arduino sent: South Sensor Temperature = 34.03 °C
+22:57:0 Arduino sent: Center Sensor Temperature = 32.06 °C
+22:58:0 Arduino sent: Recieved Hour Data 22:58 hrs
+22:58:0 Arduino sent: North Sensor Temperature = 32.49 °C
+22:58:0 Arduino sent: South Sensor Temperature = 33.96 °C
+22:58:0 Arduino sent: Center Sensor Temperature = 32.06 °C
+22:59:0 Arduino sent: Recieved Hour Data 22:59 hrs
+22:59:0 Arduino sent: North Sensor Temperature = 32.43 °C
+22:59:0 Arduino sent: South Sensor Temperature = 33.94 °C
+22:59:0 Arduino sent: Center Sensor Temperature = 32.05 °C
+23:0:0 Arduino sent: Recieved Hour Data 23:00 hrs
+23:0:0 Arduino sent: Starting night
+23:0:0 Arduino sent: LED: Turn Off
+23:0:0 Arduino sent: North Sensor Temperature = 32.44 °C
+23:0:0 Arduino sent: South Sensor Temperature = 33.98 °C
+23:0:0 Arduino sent: Center Sensor Temperature = 32.05 °C
+23:1:0 Arduino sent: Recieved Hour Data 23:01 hrs
+23:1:0 Arduino sent: North Sensor Temperature = 32.38 °C
+23:1:0 Arduino sent: South Sensor Temperature = 33.94 °C
+23:1:0 Arduino sent: Center Sensor Temperature = 32.03 °C
+23:2:0 Arduino sent: Recieved Hour Data 23:02 hrs
+23:2:0 Arduino sent: North Sensor Temperature = 32.36 °C
+23:2:0 Arduino sent: South Sensor Temperature = 33.95 °C
+23:2:0 Arduino sent: Center Sensor Temperature = 32.04 °C
+23:3:0 Arduino sent: Recieved Hour Data 23:03 hrs
+23:3:0 Arduino sent: North Sensor Temperature = 32.32 °C
+23:3:0 Arduino sent: South Sensor Temperature = 33.93 °C
+23:3:0 Arduino sent: Center Sensor Temperature = 32.00 °C
+23:4:0 Arduino sent: Recieved Hour Data 23:04 hrs
+23:4:0 Arduino sent: North Sensor Temperature = 32.35 °C
+23:4:0 Arduino sent: South Sensor Temperature = 33.81 °C
+23:4:0 Arduino sent: Center Sensor Temperature = 32.00 °C
+23:5:0 Arduino sent: Recieved Hour Data 23:05 hrs
+23:5:0 Arduino sent: North Sensor Temperature = 32.29 °C
+23:5:0 Arduino sent: South Sensor Temperature = 33.84 °C
+23:5:0 Arduino sent: Center Sensor Temperature = 32.02 °C
+23:6:0 Arduino sent: Recieved Hour Data 23:06 hrs
+23:6:0 Arduino sent: North Sensor Temperature = 32.35 °C
+23:6:0 Arduino sent: South Sensor Temperature = 33.89 °C
+23:6:0 Arduino sent: Center Sensor Temperature = 31.98 °C
+23:7:0 Arduino sent: Recieved Hour Data 23:07 hrs
+23:7:0 Arduino sent: North Sensor Temperature = 32.30 °C
+23:7:0 Arduino sent: South Sensor Temperature = 33.88 °C
+23:7:0 Arduino sent: Center Sensor Temperature = 31.96 °C
+23:8:0 Arduino sent: Recieved Hour Data 23:08 hrs
+23:8:0 Arduino sent: North Sensor Temperature = 32.24 °C
+23:8:0 Arduino sent: South Sensor Temperature = 33.80 °C
+23:8:0 Arduino sent: Center Sensor Temperature = 31.94 °C
+23:9:0 Arduino sent: Recieved Hour Data 23:09 hrs
+23:9:0 Arduino sent: North Sensor Temperature = 32.33 °C
+23:9:0 Arduino sent: South Sensor Temperature = 33.84 °C
+23:9:0 Arduino sent: Center Sensor Temperature = 31.92 °C
+23:10:0 Arduino sent: Recieved Hour Data 23:10 hrs
+23:10:0 Arduino sent: North Sensor Temperature = 32.27 °C
+23:10:0 Arduino sent: South Sensor Temperature = 33.80 °C
+23:10:0 Arduino sent: Center Sensor Temperature = 31.94 °C
+23:11:0 Arduino sent: Recieved Hour Data 23:11 hrs
+23:11:0 Arduino sent: North Sensor Temperature = 32.31 °C
+23:11:0 Arduino sent: South Sensor Temperature = 33.81 °C
+23:11:0 Arduino sent: Center Sensor Temperature = 31.92 °C
+23:12:0 Arduino sent: Recieved Hour Data 23:12 hrs
+23:12:0 Arduino sent: North Sensor Temperature = 32.23 °C
+23:12:0 Arduino sent: South Sensor Temperature = 33.80 °C
+23:12:0 Arduino sent: Center Sensor Temperature = 31.91 °C
+23:13:0 Arduino sent: Recieved Hour Data 23:13 hrs
+23:13:0 Arduino sent: North Sensor Temperature = 32.30 °C
+23:13:0 Arduino sent: South Sensor Temperature = 33.81 °C
+23:13:0 Arduino sent: Center Sensor Temperature = 31.88 °C
+23:14:0 Arduino sent: Recieved Hour Data 23:14 hrs
+23:14:0 Arduino sent: North Sensor Temperature = 32.29 °C
+23:14:0 Arduino sent: South Sensor Temperature = 33.80 °C
+23:14:0 Arduino sent: Center Sensor Temperature = 31.87 °C
+23:15:0 Arduino sent: Recieved Hour Data 23:15 hrs
+23:15:0 Arduino sent: North Sensor Temperature = 32.22 °C
+23:15:0 Arduino sent: South Sensor Temperature = 33.78 °C
+23:15:0 Arduino sent: Center Sensor Temperature = 31.87 °C
+23:16:0 Arduino sent: Recieved Hour Data 23:16 hrs
+23:16:0 Arduino sent: North Sensor Temperature = 32.26 °C
+23:16:0 Arduino sent: South Sensor Temperature = 33.74 °C
+23:16:0 Arduino sent: Center Sensor Temperature = 31.83 °C
+23:17:0 Arduino sent: Recieved Hour Data 23:17 hrs
+23:17:0 Arduino sent: North Sensor Temperature = 32.22 °C
+23:17:0 Arduino sent: South Sensor Temperature = 33.68 °C
+23:17:0 Arduino sent: Center Sensor Temperature = 31.83 °C
+23:18:0 Arduino sent: Recieved Hour Data 23:18 hrs
+23:18:0 Arduino sent: North Sensor Temperature = 32.17 °C
+23:18:0 Arduino sent: South Sensor Temperature = 33.74 °C
+23:18:0 Arduino sent: Center Sensor Temperature = 31.81 °C
+23:19:0 Arduino sent: Recieved Hour Data 23:19 hrs
+23:19:0 Arduino sent: North Sensor Temperature = 32.19 °C
+23:19:0 Arduino sent: South Sensor Temperature = 33.69 °C
+23:19:0 Arduino sent: Center Sensor Temperature = 31.80 °C
+23:20:0 Arduino sent: Recieved Hour Data 23:20 hrs
+23:20:0 Arduino sent: North Sensor Temperature = 32.15 °C
+23:20:0 Arduino sent: South Sensor Temperature = 33.64 °C
+23:20:0 Arduino sent: Center Sensor Temperature = 31.77 °C
+23:21:0 Arduino sent: Recieved Hour Data 23:21 hrs
+23:21:0 Arduino sent: North Sensor Temperature = 32.18 °C
+23:21:0 Arduino sent: South Sensor Temperature = 33.63 °C
+23:21:0 Arduino sent: Center Sensor Temperature = 31.75 °C
+23:22:0 Arduino sent: Recieved Hour Data 23:22 hrs
+23:22:0 Arduino sent: North Sensor Temperature = 32.17 °C
+23:22:0 Arduino sent: South Sensor Temperature = 33.71 °C
+23:22:0 Arduino sent: Center Sensor Temperature = 31.75 °C
+23:23:0 Arduino sent: Recieved Hour Data 23:23 hrs
+23:23:0 Arduino sent: North Sensor Temperature = 32.08 °C
+23:23:0 Arduino sent: South Sensor Temperature = 33.66 °C
+23:23:0 Arduino sent: Center Sensor Temperature = 31.71 °C
+23:24:0 Arduino sent: Recieved Hour Data 23:24 hrs
+23:24:0 Arduino sent: North Sensor Temperature = 32.13 °C
+23:24:0 Arduino sent: South Sensor Temperature = 33.65 °C
+23:24:0 Arduino sent: Center Sensor Temperature = 31.73 °C
+23:25:0 Arduino sent: Recieved Hour Data 23:25 hrs
+23:25:0 Arduino sent: North Sensor Temperature = 32.20 °C
+23:25:0 Arduino sent: South Sensor Temperature = 33.72 °C
+23:25:0 Arduino sent: Center Sensor Temperature = 31.69 °C
+23:26:0 Arduino sent: Recieved Hour Data 23:26 hrs
+23:26:0 Arduino sent: North Sensor Temperature = 32.15 °C
+23:26:0 Arduino sent: South Sensor Temperature = 33.70 °C
+23:26:0 Arduino sent: Center Sensor Temperature = 31.69 °C
+23:27:0 Arduino sent: Recieved Hour Data 23:27 hrs
+23:27:0 Arduino sent: North Sensor Temperature = 32.06 °C
+23:27:0 Arduino sent: South Sensor Temperature = 33.67 °C
+23:27:0 Arduino sent: Center Sensor Temperature = 31.67 °C
+23:28:0 Arduino sent: Recieved Hour Data 23:28 hrs
+23:28:0 Arduino sent: North Sensor Temperature = 32.00 °C
+23:28:0 Arduino sent: South Sensor Temperature = 33.58 °C
+23:28:0 Arduino sent: Center Sensor Temperature = 31.66 °C
+23:29:0 Arduino sent: Recieved Hour Data 23:29 hrs
+23:29:0 Arduino sent: North Sensor Temperature = 32.06 °C
+23:29:0 Arduino sent: South Sensor Temperature = 33.60 °C
+23:29:0 Arduino sent: Center Sensor Temperature = 31.63 °C
+23:30:0 Arduino sent: Recieved Hour Data 23:30 hrs
+23:30:0 Arduino sent: North Sensor Temperature = 32.04 °C
+23:30:0 Arduino sent: South Sensor Temperature = 33.47 °C
+23:30:0 Arduino sent: Center Sensor Temperature = 31.64 °C
+23:31:0 Arduino sent: Recieved Hour Data 23:31 hrs
+23:31:0 Arduino sent: North Sensor Temperature = 31.98 °C
+23:31:0 Arduino sent: South Sensor Temperature = 33.53 °C
+23:31:0 Arduino sent: Center Sensor Temperature = 31.61 °C
+23:32:0 Arduino sent: Recieved Hour Data 23:32 hrs
+23:32:0 Arduino sent: North Sensor Temperature = 32.01 °C
+23:32:0 Arduino sent: South Sensor Temperature = 33.48 °C
+23:32:0 Arduino sent: Center Sensor Temperature = 31.60 °C
+23:33:0 Arduino sent: Recieved Hour Data 23:33 hrs
+23:33:0 Arduino sent: North Sensor Temperature = 31.97 °C
+23:33:0 Arduino sent: South Sensor Temperature = 33.57 °C
+23:33:0 Arduino sent: Center Sensor Temperature = 31.58 °C
+23:34:0 Arduino sent: Recieved Hour Data 23:34 hrs
+23:34:0 Arduino sent: North Sensor Temperature = 31.93 °C
+23:34:0 Arduino sent: South Sensor Temperature = 33.56 °C
+23:34:0 Arduino sent: Center Sensor Temperature = 31.56 °C
+23:35:0 Arduino sent: Recieved Hour Data 23:35 hrs
+23:35:0 Arduino sent: North Sensor Temperature = 32.00 °C
+23:35:0 Arduino sent: South Sensor Temperature = 33.54 °C
+23:35:0 Arduino sent: Center Sensor Temperature = 31.54 °C
+23:36:0 Arduino sent: Recieved Hour Data 23:36 hrs
+23:36:0 Arduino sent: North Sensor Temperature = 31.97 °C
+23:36:0 Arduino sent: South Sensor Temperature = 33.46 °C
+23:36:0 Arduino sent: Center Sensor Temperature = 31.53 °C
+23:37:0 Arduino sent: Recieved Hour Data 23:37 hrs
+23:37:0 Arduino sent: North Sensor Temperature = 31.95 °C
+23:37:0 Arduino sent: South Sensor Temperature = 33.40 °C
+23:37:0 Arduino sent: Center Sensor Temperature = 31.50 °C
+23:38:0 Arduino sent: Recieved Hour Data 23:38 hrs
+23:38:0 Arduino sent: North Sensor Temperature = 31.90 °C
+23:38:0 Arduino sent: South Sensor Temperature = 33.47 °C
+23:38:0 Arduino sent: Center Sensor Temperature = 31.50 °C
+23:39:0 Arduino sent: Recieved Hour Data 23:39 hrs
+23:39:0 Arduino sent: North Sensor Temperature = 31.92 °C
+23:39:0 Arduino sent: South Sensor Temperature = 33.43 °C
+23:39:0 Arduino sent: Center Sensor Temperature = 31.47 °C
+23:40:0 Arduino sent: Recieved Hour Data 23:40 hrs
+23:40:0 Arduino sent: North Sensor Temperature = 31.86 °C
+23:40:0 Arduino sent: South Sensor Temperature = 33.41 °C
+23:40:0 Arduino sent: Center Sensor Temperature = 31.44 °C
+23:41:0 Arduino sent: Recieved Hour Data 23:41 hrs
+23:41:0 Arduino sent: North Sensor Temperature = 31.85 °C
+23:41:0 Arduino sent: South Sensor Temperature = 33.37 °C
+23:41:0 Arduino sent: Center Sensor Temperature = 31.44 °C
+23:42:0 Arduino sent: Recieved Hour Data 23:42 hrs
+23:42:0 Arduino sent: North Sensor Temperature = 31.87 °C
+23:42:0 Arduino sent: South Sensor Temperature = 33.43 °C
+23:42:0 Arduino sent: Center Sensor Temperature = 31.43 °C
+23:43:0 Arduino sent: Recieved Hour Data 23:43 hrs
+23:43:0 Arduino sent: North Sensor Temperature = 31.89 °C
+23:43:0 Arduino sent: South Sensor Temperature = 33.35 °C
+23:43:0 Arduino sent: Center Sensor Temperature = 31.41 °C
+23:44:0 Arduino sent: Recieved Hour Data 23:44 hrs
+23:44:0 Arduino sent: North Sensor Temperature = 31.79 °C
+23:44:0 Arduino sent: South Sensor Temperature = 33.37 °C
+23:44:0 Arduino sent: Center Sensor Temperature = 31.39 °C
+23:45:0 Arduino sent: Recieved Hour Data 23:45 hrs
+23:45:0 Arduino sent: North Sensor Temperature = 31.86 °C
+23:45:0 Arduino sent: South Sensor Temperature = 33.32 °C
+23:45:0 Arduino sent: Center Sensor Temperature = 31.38 °C
+23:46:0 Arduino sent: Recieved Hour Data 23:46 hrs
+23:46:0 Arduino sent: North Sensor Temperature = 31.85 °C
+23:46:0 Arduino sent: South Sensor Temperature = 33.39 °C
+23:46:0 Arduino sent: Center Sensor Temperature = 31.37 °C
+23:47:0 Arduino sent: Recieved Hour Data 23:47 hrs
+23:47:0 Arduino sent: North Sensor Temperature = 31.79 °C
+23:47:0 Arduino sent: South Sensor Temperature = 33.16 °C
+23:47:0 Arduino sent: Center Sensor Temperature = 31.35 °C
+23:48:0 Arduino sent: Recieved Hour Data 23:48 hrs
+23:48:0 Arduino sent: North Sensor Temperature = 31.71 °C
+23:48:0 Arduino sent: South Sensor Temperature = 33.24 °C
+23:48:0 Arduino sent: Center Sensor Temperature = 31.33 °C
+23:49:0 Arduino sent: Recieved Hour Data 23:49 hrs
+23:49:0 Arduino sent: North Sensor Temperature = 31.67 °C
+23:49:0 Arduino sent: South Sensor Temperature = 33.24 °C
+23:49:0 Arduino sent: Center Sensor Temperature = 31.31 °C
+23:50:0 Arduino sent: Recieved Hour Data 23:50 hrs
+23:50:0 Arduino sent: North Sensor Temperature = 31.72 °C
+23:50:0 Arduino sent: South Sensor Temperature = 33.26 °C
+23:50:0 Arduino sent: Center Sensor Temperature = 31.31 °C
+23:51:0 Arduino sent: Recieved Hour Data 23:51 hrs
+23:51:0 Arduino sent: North Sensor Temperature = 31.68 °C
+23:51:0 Arduino sent: South Sensor Temperature = 33.27 °C
+23:51:0 Arduino sent: Center Sensor Temperature = 31.30 °C
+23:52:0 Arduino sent: Recieved Hour Data 23:52 hrs
+23:52:0 Arduino sent: North Sensor Temperature = 31.67 °C
+23:52:0 Arduino sent: South Sensor Temperature = 33.15 °C
+23:52:0 Arduino sent: Center Sensor Temperature = 31.25 °C
+23:53:0 Arduino sent: Recieved Hour Data 23:53 hrs
+23:53:0 Arduino sent: North Sensor Temperature = 31.69 °C
+23:53:0 Arduino sent: South Sensor Temperature = 33.22 °C
+23:53:0 Arduino sent: Center Sensor Temperature = 31.25 °C
+23:54:0 Arduino sent: Recieved Hour Data 23:54 hrs
+23:54:0 Arduino sent: North Sensor Temperature = 31.70 °C
+23:54:0 Arduino sent: South Sensor Temperature = 33.20 °C
+23:54:0 Arduino sent: Center Sensor Temperature = 31.24 °C
+23:55:0 Arduino sent: Recieved Hour Data 23:55 hrs
+23:55:0 Arduino sent: North Sensor Temperature = 31.67 °C
+23:55:0 Arduino sent: South Sensor Temperature = 33.18 °C
+23:55:0 Arduino sent: Center Sensor Temperature = 31.21 °C
+23:56:0 Arduino sent: Recieved Hour Data 23:56 hrs
+23:56:0 Arduino sent: North Sensor Temperature = 31.59 °C
+23:56:0 Arduino sent: South Sensor Temperature = 33.11 °C
+23:56:0 Arduino sent: Center Sensor Temperature = 31.20 °C
+23:57:0 Arduino sent: Recieved Hour Data 23:57 hrs
+23:57:0 Arduino sent: North Sensor Temperature = 31.63 °C
+23:57:0 Arduino sent: South Sensor Temperature = 33.21 °C
+23:57:0 Arduino sent: Center Sensor Temperature = 31.18 °C
+23:58:0 Arduino sent: Recieved Hour Data 23:58 hrs
+23:58:0 Arduino sent: North Sensor Temperature = 31.60 °C
+23:58:0 Arduino sent: South Sensor Temperature = 33.19 °C
+23:58:0 Arduino sent: Center Sensor Temperature = 31.17 °C
+23:59:0 Arduino sent: Recieved Hour Data 23:59 hrs
+23:59:0 Arduino sent: North Sensor Temperature = 31.56 °C
+23:59:0 Arduino sent: South Sensor Temperature = 33.05 °C
+23:59:0 Arduino sent: Center Sensor Temperature = 31.16 °C
