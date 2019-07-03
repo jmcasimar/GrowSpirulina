@@ -72,13 +72,14 @@ class airPump
 {  private:
       bool __State, __Enable; // airPump state & enable
       byte __Pin;
-      unsigned int __pumpOnDay, __pumpOffDay, __pumpOnNight, __pumpOffNight;
+      unsigned long __pumpOnDay, __pumpOffDay, __pumpOnNight, __pumpOffNight;
       unsigned long __ActualTime;
+      String __Name;
 
   public:
-       airPump(byte pin); // Constructor
+       airPump(byte pin, String name); // Constructor
 
-       void begin(unsigned int onDay, unsigned int offDay, unsigned int onNight, unsigned int offNight); // Set cycle parameters
+       void begin(unsigned long onDay, unsigned long offDay, unsigned long onNight, unsigned long offNight); // Set cycle parameters
        void turnOn(); // Turn On airPump
        void turnOff(); // Turn Off airPump
        bool getState(); // Return HIGH if On, else LOW

@@ -102,7 +102,7 @@ void waveMaker::run(byte hr, byte mn)
   }
 
 /*** airPump class definitions ***/
-airPump::airPump(byte pin) // Constructor
+airPump::airPump(byte pin, String name) // Constructor
   { __State = LOW;
     __Enable = LOW;
     __Pin = pin;
@@ -111,23 +111,24 @@ airPump::airPump(byte pin) // Constructor
     __pumpOnNight = 0; // In minutes
     __pumpOffNight = 0; // In minutes
     __ActualTime = millis();
+    __Name = name;
   }
 
-void airPump::begin(unsigned int onDay, unsigned int offDay, unsigned int onNight, unsigned int offNight)
+void airPump::begin(unsigned long onDay, unsigned long offDay, unsigned long onNight, unsigned long offNight)
   { pinMode(__Pin, OUTPUT);
     digitalWrite(__Pin, !LOW);
-    __pumpOnDay = onDay;
-    __pumpOffDay = offDay;
-    __pumpOnNight = onNight;
-    __pumpOffNight = offNight;
-    Serial.println(F("AirPumps: Setup correctly"));
+    __pumpOnDay = onDay*60ul*1000ul;
+    __pumpOffDay = offDay*60ul*1000ul;
+    __pumpOnNight = onNight*60ul*1000ul;
+    __pumpOffNight = offNight*60ul*1000ul;
+    Serial.print(F("AirPump ")); Serial.print(__Name); Serial.println(F(": Setup correctly"));
   }
 
 void airPump::turnOn()
   { if(__State==LOW){
       __State = HIGH;
       digitalWrite(__Pin, !__State);
-      Serial.println(F("AirPumps: Turn On"));
+      Serial.print(F("AirPump ")); Serial.print(__Name); Serial.println(F(": Turn On"));
     }
   }
 
@@ -135,7 +136,7 @@ void airPump::turnOff()
   { if(__State==HIGH){
       __State = LOW;
       digitalWrite(__Pin, !__State);
-      Serial.println(F("AirPumps: Turn Off"));
+      Serial.print(F("AirPump ")); Serial.print(__Name); Serial.println(F(": Turn Off"));
     }
   }
 
@@ -143,7 +144,7 @@ bool airPump::getState()
   { return __State; }
 
 void airPump::enable(bool en)
-  { __Enable == en; }
+  { __Enable = en; }
 
 bool airPump::isEnable()
   { return __Enable; }
@@ -166,14 +167,10 @@ void airPump::control(unsigned long on, unsigned long off)
 void airPump::run(bool day)
   { if(__Enable==HIGH){
       if( day ){
-        unsigned long pumpOn = long(__pumpOnDay)*60ul*1000ul;
-        unsigned long pumpOff = long(pumpOn) + long(__pumpOffDay)*60ul*1000ul;
-        control(pumpOn, pumpOff);
+        control(__pumpOnDay, __pumpOnDay+__pumpOffDay);
       }
       else{
-        unsigned long pumpOn = long(__pumpOnNight)*60ul*1000ul;
-        unsigned long pumpOff = long(pumpOn) + long(__pumpOffNight)*60ul*1000ul;
-        control(pumpOn, pumpOff);
+        control(__pumpOnNight, __pumpOnNight+__pumpOffNight);
       }
     }
   }

@@ -24,8 +24,8 @@ SP_LED led(30); // Pin
 waveMaker wMaker(28, 5); // Pin, timeOn [minutes]
 
 /*** airPump definitions ***/
-airPump aPump(22); // Pin
-airPump aPump1(24); // Pin
+airPump aPumpTest(22, "Test"); // Pin, Name
+airPump aPumpBioreactor(24, "Bioreactor"); // Pin, Name
 
 /*** heatResistor definitions ***/
 heatResistor hResistor(26); // Pin 
@@ -58,8 +58,8 @@ void setup() {
 }
 
 void loop() {
-  aPump.run(isItDay); // Turn on/off airPump
-  aPump1.run(isItDay); // Turn on/off airPump1
+  aPumpTest.run(isItDay); // Turn on/off airPump
+  aPumpBioreactor.run(isItDay); // Turn on/off airPump1
   hResistor.run(isItDay, temp1, temp2, temp3); // Turn on/off heatResistor
   getTemp(10); // 10 Attemps
   //waterLevel_control(); // Level water control whit solenoid and level sensor

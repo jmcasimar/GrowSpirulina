@@ -25,11 +25,13 @@ void serialEvent(){
          dateMinute = nMinute;
          
          if(dateMinute==0){
-          if(aPump.isEnable()==LOW){
-            aPump.enable(HIGH);  
+          aPumpTest.resetTime();
+          if(aPumpTest.isEnable()==LOW){
+            aPumpTest.enable(HIGH);
           }
-          if(aPump1.isEnable()==LOW){
-            aPump1.enable(HIGH);  
+          aPumpBioreactor.resetTime();
+          if(aPumpBioreactor.isEnable()==LOW){
+            aPumpBioreactor.enable(HIGH);
           }
          }
          
@@ -65,6 +67,15 @@ void serialEvent(){
     else if(inputString.charAt(0)==zero_char+4){ // enabled heatResistor --> '4'
       hResistor.enable(HIGH);
       Serial.println(F("Enabled Heat Resistor"));
+    }
+
+    else if(inputString.charAt(0)==zero_char+5){ // turnOn airPumps --> '5'
+      aPumpBioreactor.enable(LOW);
+      aPumpBioreactor.turnOn();
+    }
+
+    else if(inputString.charAt(0)==zero_char+6){ // turnOff airPumps --> '6'
+      aPumpBioreactor.turnOff();
     }
   }
   

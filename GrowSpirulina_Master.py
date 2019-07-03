@@ -60,14 +60,12 @@ while x==0:
 
     CmD = GetLine()
 
-    if(CmD=="On" or CmD=="on" or CmD=="ON"):
-        arduino.write(bytes("1\n",'utf-8'))
-    elif(CmD=="Off" or CmD=="off" or CmD=="OFF"):
-        arduino.write(bytes("2\n",'utf-8'))
-    elif(CmD=="heatOff" or CmD=="heatoff"):
-        arduino.write(bytes("3\n",'utf-8'))
-    elif(CmD=="heatOn" or CmD=="heaton"):
-        arduino.write(bytes("4\n",'utf-8'))
+    if(CmD=="On" or CmD=="on" or CmD=="ON"): arduino.write(bytes("1\n",'utf-8'))
+    elif(CmD=="Off" or CmD=="off" or CmD=="OFF"): arduino.write(bytes("2\n",'utf-8'))
+    elif(CmD=="heatOff" or CmD=="heatoff"): arduino.write(bytes("3\n",'utf-8'))
+    elif(CmD=="heatOn" or CmD=="heaton"): arduino.write(bytes("4\n",'utf-8'))
+    elif(CmD=="airOn" or CmD=="airon"): arduino.write(bytes("5\n",'utf-8'))
+    elif(CmD=="airOff" or CmD=="airoff"): arduino.write(bytes("6\n",'utf-8'))
         
     while arduino.inWaiting()>0:
         line = arduino.readline()
