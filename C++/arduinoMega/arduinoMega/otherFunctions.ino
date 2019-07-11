@@ -46,13 +46,13 @@ void getTemp(byte attempNum){
       i++;
     }
     if(t1>0 && t1<80 && t1!=25.00){
-      temp1 = exponentialFilter(0.2, t1, temp1);
+      temp1 = exponentialFilter(0.2, (t1+offsetTemp1), temp1);
     }
     if(t2>0 && t2<80 && t2!=25.00){
-      temp2 = exponentialFilter(0.2, t2, temp2);
+      temp2 = exponentialFilter(0.2, (t2+offsetTemp2), temp2);
     }
     if(t3>0 && t3<80 && t3!=25.00){
-      temp3 = exponentialFilter(0.2, t3, temp3);
+      temp3 = exponentialFilter(0.2, (t3+offsetTemp3), temp3);
     }
   }
 }
