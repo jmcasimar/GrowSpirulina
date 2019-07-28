@@ -10,7 +10,7 @@ DeviceAddress address2 = {0x28, 0xFF, 0x10, 0x14, 0xC0, 0x16, 0x5, 0x28}; // Dir
 DeviceAddress address3 = {0x28, 0xFF, 0xF5, 0x57, 0xC2, 0x16, 0x4, 0x59}; // Direction sensor 3 (Center)
 // T1 (south), T2(North), T3(Center)
 float temp1 = 0, temp2 = 0, temp3 = 0;
-float offsetTemp1 = -14.56, offsetTemp2 = -1.36, offsetTemp3 = -1.16;
+float offsetTemp1 = -1.1, offsetTemp2 = -0.94, offsetTemp3 = -0.82;
 
 unsigned long tempTime;
 /***** Water level sensor*****/

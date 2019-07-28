@@ -66,6 +66,7 @@ while x==0:
     elif(CmD=="heatOn" or CmD=="heaton"): arduino.write(bytes("4\n",'utf-8'))
     elif(CmD=="airOn" or CmD=="airon"): arduino.write(bytes("5\n",'utf-8'))
     elif(CmD=="airOff" or CmD=="airoff"): arduino.write(bytes("6\n",'utf-8'))
+    elif(CmD=="airEnable" or CmD=="airenable"): arduino.write(bytes("7\n",'utf-8'))
         
     while arduino.inWaiting()>0:
         line = arduino.readline()

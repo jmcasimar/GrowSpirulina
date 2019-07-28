@@ -70,12 +70,17 @@ void serialEvent(){
     }
 
     else if(inputString.charAt(0)==zero_char+5){ // turnOn airPumps --> '5'
-      aPumpBioreactor.enable(LOW);
+      aPumpBioreactor.enable(false);
       aPumpBioreactor.turnOn();
     }
 
     else if(inputString.charAt(0)==zero_char+6){ // turnOff airPumps --> '6'
+      aPumpBioreactor.enable(false);
       aPumpBioreactor.turnOff();
+    }
+
+    else if(inputString.charAt(0)==zero_char+7){ // enable airPumps --> '7'
+      aPumpBioreactor.enable(true);
     }
   }
   
