@@ -62,6 +62,8 @@ class waveMaker
         void begin(byte on1, byte on2, byte on3, byte on4); // Set hour parameters
         void turnOn(); // Turn On WaveMakers
         void turnOff(); // Turn Off WaveMakers
+        void enable(bool en); // Enable/Disable WaveMakers
+        bool isEnable(); // Returns true if enable, else false
         bool getState(); // Return HIGH if On, else LOW|
         void run(byte hr, byte mn); // Run the algorithm to control Wavemakers
  } ;

@@ -88,7 +88,7 @@ void waveMaker::turnOff()
       Serial.println(F("WaveMakers: Turn Off"));
     }
   }
-
+  
 bool waveMaker::getState()
   { return __State; }
 

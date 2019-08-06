@@ -82,7 +82,15 @@ void serialEvent(){
     else if(inputString.charAt(0)==zero_char+7){ // enable airPumps --> '7'
       aPumpBioreactor.enable(true);
     }
+    
+    else if(inputString.charAt(0)==zero_char+8){ // turnOn waveMakers --> '8'
+      wMaker.turnOn();
+    }
+    
+    else if(inputString.charAt(0)==zero_char+9){ // turnOff waveMakers --> '9'
+      wMaker.turnOff();
+    }
   }
-  
+   
   inputString_complete = false;
 }
