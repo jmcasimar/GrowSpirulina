@@ -30,17 +30,17 @@ void getTemp(byte attempNum){
   if(millis()-tempTime>1000){
     tempTime = millis();
     int i=0;
-    float t1 = 0, t2 = 0, t3 = 0;
-    while( (t1<=0 || t2<=0 || t3<=0 || t1>80 || t2>80 || t3>80 || t1==25.00 || t2==25.00 || t3==25.00 ) && i<attempNum){
-      tempSensors.requestTemperatures();
+    float t1=0, t2=0;
+    
+    while( (t1<=0 || t1>80 || t1==25.00 || t2<=0 || t2>80 || t2==25.00) && i<attempNum){
+      tempSensors1.requestTemperatures();
+      tempSensors2.requestTemperatures();
+      
       if(t1<=0 || t1>80 || t1==25.00){
-        t1= tempSensors.getTempC(address1); // Get temperature from south sensor
+        t1= tempSensors1.getTempC(address1); // Get temperature from north sensor
       }
       if(t2<=0 || t2>80 || t2==25.00){
-        t2= tempSensors.getTempC(address2); // Get temperature from north sensor
-      }
-      if(t3<=0 || t3>80 || t3==25.00){
-        t3= tempSensors.getTempC(address3); // Get temperature from center sensor
+        t1= tempSensors2.getTempCByIndex(0); // Get temperature from north sensor
       }
       delay(5);
       i++;
@@ -50,9 +50,6 @@ void getTemp(byte attempNum){
     }
     if(t2>0 && t2<80 && t2!=25.00){
       temp2 = exponentialFilter(0.2, (t2+offsetTemp2), temp2);
-    }
-    if(t3>0 && t3<80 && t3!=25.00){
-      temp3 = exponentialFilter(0.2, (t3+offsetTemp3), temp3);
     }
   }
 }

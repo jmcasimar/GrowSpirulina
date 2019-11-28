@@ -37,13 +37,12 @@ void serialEvent(){
          
          Serial.print(F("Recieved Hour Data ")); Serial.print(newHour); Serial.print(F(":")); Serial.print(newMinute); Serial.println(F(" hrs")); 
          is_it_day(dateHour, dateMinute);
-         wMaker.run(dateHour, dateMinute);
+         if(wMaker_enable){ wMaker.run(dateHour, dateMinute); }
          led.run(dateHour);
        }
        else{Serial.println(F("Time Format Incorrect."));}
-       Serial.print(F("North Sensor Temperature = ")); Serial.print(temp2); Serial.println(F(" °C"));
-       Serial.print(F("South Sensor Temperature = ")); Serial.print(temp1); Serial.println(F(" °C"));
-       Serial.print(F("Center Sensor Temperature = ")); Serial.print(temp3); Serial.println(F(" °C"));
+       Serial.print(F("Bioreactor-1 Temperature = ")); Serial.print(temp1); Serial.println(F(" °C"));
+       Serial.print(F("Bioreactor-2 Temperature = ")); Serial.print(temp2); Serial.println(F(" °C"));
     }
     
     else if(inputString.charAt(0)==zero_char+1){ // turnOn solenoid --> '1'
@@ -85,10 +84,12 @@ void serialEvent(){
     
     else if(inputString.charAt(0)==zero_char+8){ // turnOn waveMakers --> '8'
       wMaker.turnOn();
+      wMaker_enable = false;
     }
     
     else if(inputString.charAt(0)==zero_char+9){ // turnOff waveMakers --> '9'
       wMaker.turnOff();
+      wMaker_enable = true;
     }
   }
    

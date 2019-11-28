@@ -110,8 +110,8 @@ class heatResistor
       void resetTime();
       void enable(bool en);
       bool isEnabled();
-      void control(float tempMin, float tempMax, float t1, float t2, float t3);
-      void run(bool day, float t1, float t2, float t3);
+      void control(float tempMin, float tempMax, float t);
+      void run(bool day, float t);
 
 } ;
 

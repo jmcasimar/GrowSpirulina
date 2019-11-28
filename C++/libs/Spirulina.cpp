@@ -226,16 +226,15 @@ void heatResistor::enable(bool en)
 bool heatResistor::isEnabled()
   { return __Enable; }
 
-void heatResistor::control(float tempMin, float tempMax, float t1, float t2, float t3)
-  { float meanTemp = (t1+t2+t3)/3;
-    if( (t1>=tempMax || t2>=tempMax || t3>=tempMax) && getState()==HIGH){
+void heatResistor::control(float tempMin, float tempMax, float t)
+  { if( t>=tempMax && getState()==HIGH){
       __Counter++;
       if(__Counter>10){
         __Counter = 0;
         turnOff();
       }
     }
-    else if( meanTemp<tempMin && getState()==LOW){
+    else if( t<tempMin && getState()==LOW){
       __Counter--;
       if(__Counter<-10){
         __Counter = 0;
@@ -245,15 +244,15 @@ void heatResistor::control(float tempMin, float tempMax, float t1, float t2, flo
     else{__Counter=0;}
   }
 
-void heatResistor::run(bool day, float t1, float t2, float t3)
+void heatResistor::run(bool day, float t)
   { if(__Enable){
       if(millis()-__ActualTime>2000){
         resetTime();
         if( day ){
-          control(__tempMinDay, __tempMaxDay, t1, t2, t3);
+          control(__tempMinDay, __tempMaxDay, t);
         }
         else{
-          control(__tempMinNight, __tempMaxNight, t1, t2, t3);
+          control(__tempMinNight, __tempMaxNight, t);
         }
       }
     }
