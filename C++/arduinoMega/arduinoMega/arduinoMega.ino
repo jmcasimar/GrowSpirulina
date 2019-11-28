@@ -4,11 +4,9 @@
 
 /***** Temperature Sensors (DS18B20)*****/
 OneWire ourWire(2); // Define pin 2 as oneWire bus
-DallasTemperature tempSensors1(&ourWire); // Declare tempSensor object with oneWire bus
-DeviceAddress address1 = {0x28, 0xFF, 0x10, 0x14, 0xC0, 0x16, 0x5, 0x28}; // Direction sensor 2 (North)
-
-OneWire otherWire(4); // Define pin 4 as oneWire bus
-DallasTemperature tempSensors2(&ourWire); // Declare tempSensor object with oneWire bus
+DallasTemperature tempSensors(&ourWire); // Declare tempSensor object with oneWire bus
+DeviceAddress address1 = {0x28, 0xFF, 0x10, 0x14, 0xC0, 0x16, 0x5, 0x28}; // Direction sensor 1 (B-1)
+DeviceAddress address2 = {0x28, 0xFF, 0xF5, 0x57, 0xC2, 0x16, 0x4, 0x59}; // Direction sensor 2 (B-2)
 
 float temp1 = 0; // T1(Bioreactor1)
 float offsetTemp1 = -0.94; 
@@ -58,8 +56,7 @@ void setup() {
   Serial.begin(115200);
   delay(3000);
   Serial.println(F("Setting up device..."));
-  tempSensors1.begin();   // Init Temp Sensors
-  tempSensors2.begin();   // Init Temp Sensors
+  tempSensors.begin();   // Init Temp Sensors
   //tempSensors.setWaitForConversion(true);
   Serial.println(F("Temperature Sensores started correctly"));
   setupActuators(); // Init Actuators

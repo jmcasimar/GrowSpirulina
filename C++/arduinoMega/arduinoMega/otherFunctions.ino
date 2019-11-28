@@ -33,14 +33,13 @@ void getTemp(byte attempNum){
     float t1=0, t2=0;
     
     while( (t1<=0 || t1>80 || t1==25.00 || t2<=0 || t2>80 || t2==25.00) && i<attempNum){
-      tempSensors1.requestTemperatures();
-      tempSensors2.requestTemperatures();
+      tempSensors.requestTemperatures();
       
       if(t1<=0 || t1>80 || t1==25.00){
-        t1= tempSensors1.getTempC(address1); // Get temperature from north sensor
+        t1= tempSensors.getTempC(address1); // Get temperature from B-1
       }
       if(t2<=0 || t2>80 || t2==25.00){
-        t1= tempSensors2.getTempCByIndex(0); // Get temperature from north sensor
+        t2= tempSensors.getTempC(address2); // Get temperature from B-2
       }
       delay(5);
       i++;
