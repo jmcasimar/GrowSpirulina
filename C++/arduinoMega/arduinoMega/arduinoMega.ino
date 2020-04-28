@@ -1,17 +1,17 @@
-#include <OneWire.h>                
+#include <OneWire.h>
 #include <DallasTemperature.h>
 #include <Spirulina.h>
 
 /***** Temperature Sensors (DS18B20)*****/
 OneWire ourWire(2); // Define pin 2 as oneWire bus
 DallasTemperature tempSensors(&ourWire); // Declare tempSensor object with oneWire bus
-DeviceAddress address1 = {0x28, 0xFF, 0x10, 0x14, 0xC0, 0x16, 0x5, 0x28}; // Direction sensor 1 (B-1)
 DeviceAddress address2 = {0x28, 0xFF, 0xF5, 0x57, 0xC2, 0x16, 0x4, 0x59}; // Direction sensor 2 (B-2)
+DeviceAddress address3 = {0x28, 0xFF, 0x10, 0x14, 0xC0, 0x16, 0x5, 0x28}; // Direction sensor 3 (B-3)
 
-float temp1 = 0; // T1(Bioreactor1)
-float offsetTemp1 = +0.32; 
 float temp2 = 0; // T2(Bioreactor2)
 float offsetTemp2 = +0.24;
+float temp3 = 0; // T3(Bioreactor3)
+float offsetTemp3 = +0.32;
 unsigned long tempTime;
 
 /***** Water level sensor*****/
@@ -29,11 +29,11 @@ waveMaker wMaker(28, 5); // Pin, timeOn [minutes]
 bool wMaker_enable = true;
 
 /*** airPump definitions ***/
-airPump aPumpTest(22, "Test"); // Pin, Name
-airPump aPumpBioreactor(24, "Bioreactor"); // Pin, Name
+airPump aPumpBioreactor2(24, "Bioreactor-2"); // Pin, Name
+airPump aPumpBioreactor3(22, "Bioreactor-3"); // Pin, Name
 
 /*** heatResistor definitions ***/
-heatResistor hResistor(26); // Pin 
+heatResistor hResistor(26); // Pin
 
 /***** Control water level variables *****/
 int water_count_low = 0; // Filter variable
@@ -64,9 +64,9 @@ void setup() {
 }
 
 void loop() {
-  aPumpTest.run(isItDay); // Turn on/off airPump
-  aPumpBioreactor.run(isItDay); // Turn on/off airPump1
-  hResistor.run(isItDay, temp1); // Turn on/off heatResistor
+  aPumpBioreactor2.run(isItDay); // Turn on/off airPump2
+  aPumpBioreactor3.run(isItDay); // Turn on/off airPump3
+  hResistor.run(isItDay, temp3); // Turn on/off heatResistor
   getTemp(10); // 10 Attemps
   //waterLevel_control(); // Level water control whit solenoid and level sensor
 }
