@@ -11,6 +11,6 @@ void setupActuators(){
   wMaker.begin(2, 9, 14, 19); // Parameters: On1, On2, On3, On4 [hours]
   aPumpTest.begin(20, 10, 5, 55); // Parameters: OnDay, OffDay, OnNight, OffNight [minutes]
   aPumpBioreactor.begin(20, 10, 5, 55); // Parameters: OnDay, OffDay, OnNight, OffNight [minutes]
-  hResistor.begin(33.5, 30.0, 30.0, 29.0); // Parameters: tempMaxDay, tempMinDay, tempMaxNight, tempMinNight;
+  hResistor.begin(23.0, 21.0, 21.0, 19.0); // Parameters: tempMaxDay, tempMinDay, tempMaxNight, tempMinNight;
   tempTime = millis();  
 }

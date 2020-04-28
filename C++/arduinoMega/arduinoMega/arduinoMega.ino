@@ -9,9 +9,9 @@ DeviceAddress address1 = {0x28, 0xFF, 0x10, 0x14, 0xC0, 0x16, 0x5, 0x28}; // Dir
 DeviceAddress address2 = {0x28, 0xFF, 0xF5, 0x57, 0xC2, 0x16, 0x4, 0x59}; // Direction sensor 2 (B-2)
 
 float temp1 = 0; // T1(Bioreactor1)
-float offsetTemp1 = -0.94; 
+float offsetTemp1 = +0.32; 
 float temp2 = 0; // T2(Bioreactor2)
-float offsetTemp2 = -0.94; 
+float offsetTemp2 = +0.24;
 unsigned long tempTime;
 
 /***** Water level sensor*****/
