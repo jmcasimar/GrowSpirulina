@@ -2,7 +2,7 @@ from PIL import Image
 
 class asciiArt:
     def __init__(self):
-        self.ASCII_CHARS = [ '#', '?', '%', '.', 'S', '+', '.', '*', ':', ',', '@']
+        self.ASCII_CHARS = [ '.', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#']
 
     def scale_image(self, image, new_width=75):
         """Resizes an image preserving the aspect ratio.

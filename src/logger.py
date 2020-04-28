@@ -29,8 +29,8 @@ class logger:
                                           'error':{'color':'red'},
                                           'critical':{'color':'white', 'bold':True, 'background':'red'}
                                                        },
-                                         field_styles={'asctime':{'color':'white'},
-                                                       'name':{'color':'green', 'bold':True}
+                                         field_styles={'asctime':{'color':'white', 'bold':True},
+                                                       'name':{'color':'cyan', 'bold':True}
                                                        })
 
         # Tell the handler to use this format

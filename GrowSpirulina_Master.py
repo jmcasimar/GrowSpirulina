@@ -49,7 +49,7 @@ elif(str(sys.argv[1]) != 'yes'): ask = True
 else: ask = False
 
 if(ask):
-    print("\n***** Welcome to Grow Spirulina *****\n\nWith this window you will be able to control your production,"+
+    print("\nWith this window you will be able to control your production,"+
           " of Spirulina, but you must be capable to operate this system or you can cause severe damage.\n")
     start = input("Do you want to continue? y/n \n")
     if(start == "s" or start =="S" or start == "y" or start == "Y"):
