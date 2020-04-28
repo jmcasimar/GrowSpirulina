@@ -3,6 +3,7 @@ import sys
 import serial
 import select
 from time import sleep
+import colored_traceback
 from datetime import datetime
 sys.path.insert(0, './src/')
 from logger import logger
@@ -99,7 +100,7 @@ try:
         elif(CmD=="airEnable3" or CmD=="airenable3"): arduino.write(bytes("f\n",'utf-8'))
 
         while arduino.inWaiting()>0:
-            line = arduino.readline()
+            line = str(arduino.readline(), "utf-8")[0:-1]
             log.logger_arduino.info(line)
 
     if(x==1): mainClose()

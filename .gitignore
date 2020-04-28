@@ -1,2 +1,4 @@
-/log
-/temp
+# All temporary folders
+**/log
+**/temp
+**/__pycache__
