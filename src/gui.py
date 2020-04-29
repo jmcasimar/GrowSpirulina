@@ -29,9 +29,7 @@ class GUI:
         else: self.str2log('Running from root', 0)
 
         # UI Variables
-        self.solenoid = False;
         self.heatResistor = True;
-        self.waveMaker = True;
         self.airPump2 = True;
         self.airPumpEnable2 = True;
         self.airPump3 = True;
@@ -102,9 +100,7 @@ class GUI:
          layout = [
                       [sg.Text('Grow Spirulina', size=(13, 1), justification='center', font=("Helvetica 30 bold"), relief=sg.RELIEF_RIDGE, border_width=5)],
                       [sg.Text('_' * 45)],
-                      [sg.Text('Solenoide:      '), sg.Checkbox('Encender', key='solenoid', default=False, text_color='white')],
                       [sg.Text('Resistencia:   '), sg.Checkbox('Habilitar', key='heatResistor', default=True, text_color='white')],
-                      [sg.Text('WaveMaker:   '), sg.Checkbox('Encender', key='waveMaker', default=True, text_color='white')],
                       [sg.Text('Bomba Aire 2:'), sg.Checkbox('Automático', key='airPump2', default=True, text_color='white'),
                         sg.Radio('On', "air2", key='airPump2On', default=True, text_color='white', disabled=True),
                         sg.Radio('Off', "air2", key='airPump2Off', text_color='white', disabled=True)
@@ -149,20 +145,10 @@ class GUI:
                     if values['airPump3On']: self.str2log('Bomba aire 3: Modo manual (Encendida)', 1)
                     else: self.str2log('Bomba aire 3: Modo manual (Apagada)', 1)
 
-            if values['solenoid']!=self.solenoid:
-                self.solenoid = values['solenoid']
-                if self.solenoid: self.str2log('Solenoide encendida', 1)
-                else: self.str2log('Solenoide apagada', 1)
-
             if values['heatResistor']!=self.heatResistor:
                 self.heatResistor = values['heatResistor']
                 if self.heatResistor: self.str2log('Resistencia habilitada', 1)
                 else: self.str2log('Resistencia deshabilitada', 1)
-
-            if values['waveMaker']!=self.waveMaker:
-                self.waveMaker = values['waveMaker']
-                if self.waveMaker: self.str2log('WaveMaker encendido', 1)
-                else: self.str2log('WaveMaker apagado', 1)
 
             if values['airPump2On'] and not self.airPump2:
                 self.airPump2 = True

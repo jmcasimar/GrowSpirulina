@@ -87,7 +87,7 @@ try:
             else:
                 str_minute = str(minute)
             str_date = "0"+str_hour+str_minute+"\r\n"
-            arduino.write(bytes(str_date, 'utf-8'))
+            serialControl.write(serialControl.arduino, str_date)
 
         CmD = GetLine()
 
