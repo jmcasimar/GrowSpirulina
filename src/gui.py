@@ -126,16 +126,16 @@ class GUI:
                 if self.airPumpEnable2:
                     self.window['airPump2On'].Update(disabled=True)
                     self.window['airPump2Off'].Update(disabled=True)
-                    if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "e\n")
+                    if (self.ser!=None): self.ser.write(self.ser.arduino, "e\n")
                     self.str2log('Bomba aire 2: Modo automático', 1)
                 else:
                     self.window['airPump2On'].Update(disabled=False)
                     self.window['airPump2Off'].Update(disabled=False)
                     if values['airPump2On']:
-                        if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "a\n")
+                        if (self.ser!=None): self.ser.write(self.ser.arduino, "a\n")
                         self.str2log('Bomba aire 2: Modo manual (Encendida)', 1)
                     else:
-                        if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "c\n")
+                        if (self.ser!=None): self.ser.write(self.ser.arduino, "c\n")
                         self.str2log('Bomba aire 2: Modo manual (Apagada)', 1)
 
             if values['airPump3']!=self.airPumpEnable3:
@@ -143,43 +143,43 @@ class GUI:
                 if self.airPumpEnable3:
                     self.window['airPump3On'].Update(disabled=True)
                     self.window['airPump3Off'].Update(disabled=True)
-                    if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "f\n")
+                    if (self.ser!=None): self.ser.write(self.ser.arduino, "f\n")
                     self.str2log('Bomba aire 3: Modo automático', 1)
                 else:
                     self.window['airPump3On'].Update(disabled=False)
                     self.window['airPump3Off'].Update(disabled=False)
                     if values['airPump3On']:
-                        if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "b\n")
+                        if (self.ser!=None): self.ser.write(self.ser.arduino, "b\n")
                         self.str2log('Bomba aire 3: Modo manual (Encendida)', 1)
                     else:
-                        if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "d\n")
+                        if (self.ser!=None): self.ser.write(self.ser.arduino, "d\n")
                         self.str2log('Bomba aire 3: Modo manual (Apagada)', 1)
 
             if values['heatResistor']!=self.heatResistor:
                 self.heatResistor = values['heatResistor']
                 if self.heatResistor:
-                    if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "4\n")
+                    if (self.ser!=None): self.ser.write(self.ser.arduino, "4\n")
                     self.str2log('Resistencia habilitada', 1)
                 else:
-                    if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "3\n")
+                    if (self.ser!=None): self.ser.write(self.ser.arduino, "3\n")
                     self.str2log('Resistencia deshabilitada', 1)
 
             if values['airPump2On'] and not self.airPump2:
                 self.airPump2 = True
-                if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "a\n")
+                if (self.ser!=None): self.ser.write(self.ser.arduino, "a\n")
                 self.str2log('Bomba aire 2 encendida', 1)
             elif values['airPump2Off'] and self.airPump2:
                 self.airPump2 = False
-                if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "c\n")
+                if (self.ser!=None): self.ser.write(self.ser.arduino, "c\n")
                 self.str2log('Bomba aire 2 apagada', 1)
 
             if values['airPump3On'] and not self.airPump3:
                 self.airPump3 = True
-                if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "b\n")
+                if (self.ser!=None): self.ser.write(self.ser.arduino, "b\n")
                 self.str2log('Bomba aire 3 encendida', 1)
             elif values['airPump3Off'] and self.airPump3:
                 self.airPump3 = False
-                if (self.serialControl!=None): self.serialControl.write(self.serialControl.arduino, "d\n")
+                if (self.ser!=None): self.ser.write(self.ser.arduino, "d\n")
                 self.str2log('Bomba aire 3 apagada', 1)
 
         except Exception as e:
