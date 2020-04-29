@@ -6,8 +6,10 @@ from time import sleep
 import colored_traceback
 from datetime import datetime
 sys.path.insert(0, './src/')
+from gui import GUI
 from logger import logger
 from asciiART import asciiArt
+from serialCallback import serialController
 
 # Colored traceback useful for raise exception with colors in terminal
 colored_traceback.add_hook()
@@ -24,19 +26,20 @@ if not os.path.exists('temp/'): os.makedirs('temp/')
 # Charge logger parameters
 log = logger()
 
-# Init Arduino object, Serial Port and Baud Rate
-arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=0)
-arduino.close()
+# From Serial Callback
+serialControl = serialController(log.logger, log.logger_arduino)
+
+# Charge GUI parameters and connect logger and serialControl
+gui = GUI(log.logger, serialControl)
 
 # Define functions
-
 def GetLine(Block=False): # Get an Input Line
   if Block or select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], []):
       return input()
 
 def mainClose(): # When program is finishing
     log.logger.warning("Closing devices")
-    arduino.close()
+    serialControl.close()
     log.logger.warning("Program finished")
 
 day = 0
@@ -55,8 +58,9 @@ if(ask):
     if(start == "s" or start =="S" or start == "y" or start == "Y"):
         x=0
         log.logger.info("Setting Devices...")
-        arduino.open()
+        serialControl.open()
         log.logger.info("Devices ready")
+        gui.begin()
     else:
         x=1
         log.logger.warning("Permission to start GrowGreens refused")
@@ -65,6 +69,7 @@ else: x = 0
 try:
     while x==0:
         sleep(0.2)
+        if gui.isOpen: gui.run()
         now = datetime.now()
 
         if(day!=now.day):
@@ -86,22 +91,20 @@ try:
 
         CmD = GetLine()
 
-        if(CmD=="On" or CmD=="on" or CmD=="ON"): arduino.write(bytes("1\n",'utf-8'))
-        elif(CmD=="Off" or CmD=="off" or CmD=="OFF"): arduino.write(bytes("2\n",'utf-8'))
-        elif(CmD=="heatOff" or CmD=="heatoff"): arduino.write(bytes("3\n",'utf-8'))
-        elif(CmD=="heatOn" or CmD=="heaton"): arduino.write(bytes("4\n",'utf-8'))
-        elif(CmD=="wmOn" or CmD=="wmon"): arduino.write(bytes("5\n",'utf-8'))
-        elif(CmD=="wmOff" or CmD=="wmoff"): arduino.write(bytes("6\n",'utf-8'))
-        elif(CmD=="airOn2" or CmD=="airon2"): arduino.write(bytes("a\n",'utf-8'))
-        elif(CmD=="airOn3" or CmD=="airon3"): arduino.write(bytes("b\n",'utf-8'))
-        elif(CmD=="airOff2" or CmD=="airoff2"): arduino.write(bytes("c\n",'utf-8'))
-        elif(CmD=="airOff3" or CmD=="airoff3"): arduino.write(bytes("d\n",'utf-8'))
-        elif(CmD=="airEnable2" or CmD=="airenable2"): arduino.write(bytes("e\n",'utf-8'))
-        elif(CmD=="airEnable3" or CmD=="airenable3"): arduino.write(bytes("f\n",'utf-8'))
+        if(CmD=="On" or CmD=="on" or CmD=="ON"): serialControl.write(serialControl.arduino, "1\n")
+        elif(CmD=="Off" or CmD=="off" or CmD=="OFF"): serialControl.write(serialControl.arduino, "2\n")
+        elif(CmD=="heatOff" or CmD=="heatoff"): serialControl.write(serialControl.arduino, "3\n")
+        elif(CmD=="heatOn" or CmD=="heaton"): serialControl.write(serialControl.arduino, "4\n")
+        elif(CmD=="wmOn" or CmD=="wmon"): serialControl.write(serialControl.arduino, "5\n")
+        elif(CmD=="wmOff" or CmD=="wmoff"): serialControl.write(serialControl.arduino, "6\n")
+        elif(CmD=="airOn2" or CmD=="airon2"): serialControl.write(serialControl.arduino, "a\n")
+        elif(CmD=="airOn3" or CmD=="airon3"): serialControl.write(serialControl.arduino, "b\n")
+        elif(CmD=="airOff2" or CmD=="airoff2"): serialControl.write(serialControl.arduino, "c\n")
+        elif(CmD=="airOff3" or CmD=="airoff3"): serialControl.write(serialControl.arduino, "d\n")
+        elif(CmD=="airEnable2" or CmD=="airenable2"): serialControl.write(serialControl.arduino, "e\n")
+        elif(CmD=="airEnable3" or CmD=="airenable3"): serialControl.write(serialControl.arduino, "f\n")
 
-        while arduino.inWaiting()>0:
-            line = str(arduino.readline(), "utf-8")[0:-1]
-            log.logger_arduino.info(line)
+        serialControl.loop()
 
     if(x==1): mainClose()
 
