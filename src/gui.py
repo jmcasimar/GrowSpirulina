@@ -25,8 +25,8 @@ class GUI:
 
         # Tables variables
         actualDirectory = os.getcwd()
-        if actualDirectory.endswith('src'): str2log('Running from src', 0)
-        else: str2log('Running from root', 0)
+        if actualDirectory.endswith('src'): self.str2log('Running from src', 0)
+        else: self.str2log('Running from root', 0)
 
         # UI Variables
         self.solenoid = False;
@@ -123,65 +123,65 @@ class GUI:
     def run(self):
         try:
             event, values = self.window.read(timeout=0, timeout_key='timeout')
-            if event!='timeout' and event!=None: str2log("{} - {}".format(event, values), 0)
+            if event!='timeout' and event!=None: self.str2log("{} - {}".format(event, values), 0)
 
             if values['airPump2']!=self.airPumpEnable2:
                 self.airPumpEnable2 = values['airPump2']
                 if self.airPumpEnable2:
                     self.window['airPump2On'].Update(disabled=True)
                     self.window['airPump2Off'].Update(disabled=True)
-                    str2log('Bomba aire 2: Modo automático', 1)
+                    self.str2log('Bomba aire 2: Modo automático', 1)
                 else:
                     self.window['airPump2On'].Update(disabled=False)
                     self.window['airPump2Off'].Update(disabled=False)
-                    if values['airPump2On']: str2log('Bomba aire 2: Modo manual (Encendida)', 1)
-                    else: str2log('Bomba aire 2: Modo manual (Apagada)', 1)
+                    if values['airPump2On']: self.str2log('Bomba aire 2: Modo manual (Encendida)', 1)
+                    else: self.str2log('Bomba aire 2: Modo manual (Apagada)', 1)
 
             if values['airPump3']!=self.airPumpEnable3:
                 self.airPumpEnable3 = values['airPump3']
                 if self.airPumpEnable3:
                     self.window['airPump3On'].Update(disabled=True)
                     self.window['airPump3Off'].Update(disabled=True)
-                    str2log('Bomba aire 3: Modo automático', 1)
+                    self.str2log('Bomba aire 3: Modo automático', 1)
                 else:
                     self.window['airPump3On'].Update(disabled=False)
                     self.window['airPump3Off'].Update(disabled=False)
-                    if values['airPump3On']: str2log('Bomba aire 3: Modo manual (Encendida)', 1)
-                    else: str2log('Bomba aire 3: Modo manual (Apagada)', 1)
+                    if values['airPump3On']: self.str2log('Bomba aire 3: Modo manual (Encendida)', 1)
+                    else: self.str2log('Bomba aire 3: Modo manual (Apagada)', 1)
 
             if values['solenoid']!=self.solenoid:
                 self.solenoid = values['solenoid']
-                if self.solenoid: str2log('Solenoide encendida', 1)
-                else: str2log('Solenoide apagada', 1)
+                if self.solenoid: self.str2log('Solenoide encendida', 1)
+                else: self.str2log('Solenoide apagada', 1)
 
             if values['heatResistor']!=self.heatResistor:
                 self.heatResistor = values['heatResistor']
-                if self.heatResistor: str2log('Resistencia habilitada', 1)
-                else: str2log('Resistencia deshabilitada', 1)
+                if self.heatResistor: self.str2log('Resistencia habilitada', 1)
+                else: self.str2log('Resistencia deshabilitada', 1)
 
             if values['waveMaker']!=self.waveMaker:
                 self.waveMaker = values['waveMaker']
-                if self.waveMaker: str2log('WaveMaker encendido', 1)
-                else: str2log('WaveMaker apagado', 1)
+                if self.waveMaker: self.str2log('WaveMaker encendido', 1)
+                else: self.str2log('WaveMaker apagado', 1)
 
             if values['airPump2On'] and not self.airPump2:
                 self.airPump2 = True
-                str2log('Bomba aire 2 encendida', 1)
+                self.str2log('Bomba aire 2 encendida', 1)
             elif values['airPump2Off'] and self.airPump2:
                 self.airPump2 = False
-                str2log('Bomba aire 2 apagada', 1)
+                self.str2log('Bomba aire 2 apagada', 1)
 
             if values['airPump3On'] and not self.airPump3:
                 self.airPump3 = True
-                str2log('Bomba aire 3 encendida', 1)
+                self.str2log('Bomba aire 3 encendida', 1)
             elif values['airPump3Off'] and self.airPump3:
                 self.airPump3 = False
-                str2log('Bomba aire 3 apagada', 1)
+                self.str2log('Bomba aire 3 apagada', 1)
 
         except Exception as e:
             self.str2log("GUI Closed: {}".format(e), 2)
             self.isOpen = False
-            #str2log(e, 3)
+            #self.str2log(e, 3)
 
 # Debug
 def main():
