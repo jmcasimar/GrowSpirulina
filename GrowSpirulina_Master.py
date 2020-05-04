@@ -64,7 +64,12 @@ if(ask):
     else:
         x=1
         log.logger.warning("Permission to start GrowGreens refused")
-else: x = 0
+else:
+    x=0
+    log.logger.info("Setting Devices...")
+    serialControl.open()
+    log.logger.info("Devices ready")
+    gui.begin()
 
 try:
     while x==0:
