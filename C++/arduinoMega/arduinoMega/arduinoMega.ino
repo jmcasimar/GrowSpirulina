@@ -47,6 +47,11 @@ bool isItDay = LOW;
 byte dayBegin = 7;
 byte nightBegin = 19;
 
+/***** Auxiliar 5V output power supply check *****/
+bool powerSupply = false;
+byte powerCount = 0;
+byte powerSupplyPin = 3;
+
 /***** Serial Communication Variables *****/
 const byte CMDBUFFER_SIZE = 32;
 String inputString = "";
@@ -60,6 +65,7 @@ void setup() {
   //tempSensors.setWaitForConversion(true);
   Serial.println(F("Temperature Sensores started correctly"));
   setupActuators(); // Init Actuators
+  pinMode(powerSupplyPin, INPUT); // Start powerSupplyPin
   Serial.println(F("Device Ready"));
 }
 

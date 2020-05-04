@@ -41,6 +41,16 @@ void serialEvent(){
          is_it_day(dateHour, dateMinute);
          if(wMaker_enable){ wMaker.run(dateHour, dateMinute); }
          led.run(dateHour);
+         bool auxRead = digitalRead(powerSupplyPin);
+         if (auxRead!=powerSupply || auxRead==LOW){
+          if(powerCount<=3) powerCount++;
+          else {
+            powerCount = 0;
+            if (auxRead!=powerSupply) powerSupply = !powerSupply;
+            if (powerSupply) Serial.println(F("Power Supply is on"));
+            else Serial.println(F("Power Supply is off"));
+          }
+         }
        }
        else{Serial.println(F("Time Format Incorrect."));}
        Serial.print(F("Bioreactor-2 Temperature = ")); Serial.print(temp2); Serial.println(F(" °C"));
