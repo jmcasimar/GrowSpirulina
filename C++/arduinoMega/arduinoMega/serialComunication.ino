@@ -43,12 +43,12 @@ void serialEvent(){
          led.run(dateHour);
          bool auxRead = digitalRead(powerSupplyPin);
          if (auxRead!=powerSupply || auxRead==LOW){
-          if(powerCount<=3) powerCount++;
+          if(powerCount<2) powerCount++;
           else {
             powerCount = 0;
             if (auxRead!=powerSupply) powerSupply = !powerSupply;
-            if (powerSupply) Serial.println(F("Power Supply is on"));
-            else Serial.println(F("Power Supply is off"));
+            if (powerSupply) Serial.println(F("info,Power Supply is on"));
+            else Serial.println(F("warning,Power Supply is off"));
           }
          }
        }
